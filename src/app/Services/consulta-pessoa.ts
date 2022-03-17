@@ -70,11 +70,11 @@ export class ConsultaPessoaService {
 
 
     public getPessoa(cpfCnpj: string) {
-        return this.http.get<Pessoa>(`http://localhost:8080/rada-laboratorios/pessoa/buscarPessoaPorCpfCnpj/${cpfCnpj}`);
+        return this.http.get<Pessoa>(``);
 
     }
     public postPessoacpf(pessoacpf: string) {
-        return this.http.post<Campos>(`http://localhost:8080/rada-laboratorios/termoColeta/gravarTermoColeta`, pessoacpf)
+        return this.http.post<Campos>(``, pessoacpf)
     }
 
 

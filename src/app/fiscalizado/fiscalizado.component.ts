@@ -142,7 +142,7 @@ export class FiscalizadoComponent {
     termoSalvar.acaoTermo = 'F';
     termoSalvar.atualizacao = new Date();
     termoSalvar.nomeProdutor = 'Diego';
-    this.http.post('http://localhost:8080/rada-laboratorios/termoColeta/gravarTermoColeta',termoSalvar)
+    this.http.post('',termoSalvar)
     .subscribe(
       resultado => {
         console.log(resultado)

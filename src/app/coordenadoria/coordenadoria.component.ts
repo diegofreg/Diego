@@ -51,14 +51,7 @@ export class CoordenadoriaComponent implements OnInit {
     
   ];
 
-  foodss: diego[] = [
-    {value: 'DF', viewValue: 'Brasilia00000000'},
-    {value: 'MG', viewValue: 'Minas'},
-    {value: 'RJ', viewValue: 'Cabo Frio'},
-    {value: 'MT', viewValue: 'Mato Grosso'},
-    {value: 'CS', viewValue: 'Mato '},
-    {value: 'CS', viewValue: 'cs '},
-  ];
+  
 
 
   
