@@ -1,0 +1,87 @@
+<!-- <mat-toolbar class="toolbar" color="primary">
+    <table>
+        Logo marca
+        <p>
+            Termo de coleta
+        </p>
+
+        <p> Bem vido Diego Pereira D Abadia
+        
+    </table>
+
+</mat-toolbar> -->
+
+
+<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+    <div class="mat-app-background">
+        <div class="div100Sp">
+            <div class="div90">
+                <img class="card-img-top" src="/assets/mini.jpg">
+            </div>
+            <div class="div10">
+                <app-toolbar></app-toolbar>
+            </div>
+        </div>
+      
+      <div class="content">
+        
+           
+        <mat-card-subtitle> 
+            <div class="div100Sp">
+                <div class="div90">
+                   <h1>Termo de Coleta</h1>
+            </div>
+            <div class="div10Left">
+                <input type="text" disabled value="{{ dataAtual | date:'dd/MM/yyyy'}}" class="div100"/>                 
+            </div>
+        </div>
+        </mat-card-subtitle>
+        <mat-card-subtitle> 
+            <div class="div100Sp">
+                <div class="div90">           
+                    <h2>Bem Vindo, Andressa Carneiro De Sousa</h2> 
+                </div>
+                <div class="div10Left">
+                    <select name="time" class="div100">
+                        <option><span style="color: rgb(117, 6, 12);">Escritorio</span></option>
+                    <option style="background-color: rgb(200, 227, 252);"  value="Coordenadoria">Coordenadoria</option>
+                </select>
+                </div>
+            </div>
+    </mat-card-subtitle>
+    <app-coordenadoria> </app-coordenadoria>
+            
+      </div>
+    </div>
+  </div>
+
+
+
+    
+    
+   
+
+    
+  
+    
+
+
+       
+        
+        
+    
+
+
+    
+
+    
+
+
+        
+
+
+          
+           
+                  
+           
+           
