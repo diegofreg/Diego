@@ -13,12 +13,16 @@
           <mat-form-field appearance="fill" class="inputFieldMin">
             <mat-label>Número de Masp</mat-label>
             <input (blur)="onBlur3()" formControlName="numeromasp"   id="numeromasp" type="text" autocomplete="off" matInput #postalCode
-              maxlength="11" required>
+              maxlength="15" required>
             
 
   
             <mat-hint></mat-hint>
           </mat-form-field>
+
+
+
+          
       
   </div>
         <div class="div40">
@@ -26,7 +30,7 @@
           <mat-form-field appearance="fill" class="inputFieldMed">
            
             <mat-label>Nome</mat-label>
-            <input formControlName="nome" type="text" autocomplete="off" id="nome" matInput
+            <input formControlName="numeromasp" type="text" autocomplete="off" id="numeromasp" matInput
               placeholder=" " matInput name="nome"  required>
             <mat-hint></mat-hint>
           </mat-form-field>
@@ -35,7 +39,7 @@
         <div class="div20">
           <mat-form-field appearance="fill" class="inputFieldMed">
             <mat-label>Cargo</mat-label>
-            <input formControlName="cargo" type="text" matInput name="cargo" autocomplete="off" required >
+            <input formControlName="Cargo" type="text" matInput name="Cargo" autocomplete="off" required >
             <mat-hint></mat-hint>
           </mat-form-field>
         </div>
@@ -79,8 +83,8 @@
           <mat-radio-group aria-label="Select an option">
           <div>
            
-            <input type="checkbox" id="meuCheckbox" (change)="opentestemunha()">
-            <label for="scales">Assinado</label>
+            <input type="checkbox" id="meuCheckbox" (change)="opentestemunha()" >
+            <label for="scales">Não Assinado</label>
           </div>
           
           

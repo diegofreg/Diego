@@ -52,10 +52,11 @@ interface Campos {
 }
 
 interface Masp1 {
-    idPessoa: number;
+    idPessoa: string;
+    nomePessoa:string;
     nunMaspOuRegInstituicaoConveniada: number;
-    Cargo: string;
-    numeromasp:string;
+    indentificadorCargo: string;
+    idPapel:string;
     
     
 }

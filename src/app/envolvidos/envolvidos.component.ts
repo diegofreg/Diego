@@ -130,20 +130,23 @@ export class EnvolvidosComponent implements OnInit {
     console.log("BLUR3", numeromasp);
 
     this.Masp1.getPessoamasp(numeromasp).subscribe(
-      ({  }) => {
+      ({nomePessoa,indentificadorCargo,idPapel }) => {
         
-const{numeromasp}=this.Masp1
-const{idPessoa,nunMaspOuRegInstituicaoConveniada,Cargo}=numeromasp
+const{}=this.Masp1
+const{idPessoa,nunMaspOuRegInstituicaoConveniada}=numeromasp
 
-console.log(idPessoa,nunMaspOuRegInstituicaoConveniada,Cargo);
+console.log(nomePessoa,nunMaspOuRegInstituicaoConveniada,indentificadorCargo,idPapel);
 
 
     
-        this.appForm.get("nome3")?.patchValue(idPessoa);
-        this.appForm.get("cargo1")?.patchValue(Cargo);
-        this.appForm.get("cargo1")?.patchValue(nunMaspOuRegInstituicaoConveniada);
-
+        this.appForm.get("numeromasp")?.patchValue(idPessoa);
+        this.appForm.get("identificador")?.patchValue(indentificadorCargo);
+        this.appForm.get("numeromasp")?.patchValue(nunMaspOuRegInstituicaoConveniada);
+        this.appForm.get("Cargo")?.patchValue(idPapel);
       });
+
+
+
 
 
 
