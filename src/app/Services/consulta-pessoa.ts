@@ -51,6 +51,15 @@ interface Campos {
 
 }
 
+interface Masp1 {
+    idPessoa: number;
+    nunMaspOuRegInstituicaoConveniada: number;
+    Cargo: string;
+    numeromasp:string;
+    
+    
+}
+
 
 
 
@@ -65,19 +74,22 @@ export class ConsultaPessoaService {
         throw new Error('Method not implemented.');
     }
 
+    
     constructor(private http: HttpService) { }
 
 
 
     public getPessoa(cpfCnpj: string) {
-        return this.http.get<Pessoa>(``);
+        return this.http.get<Pessoa>(`http://localhost:8080/rada-laboratorios/pessoa/buscarPessoaPorCpfCnpj/${cpfCnpj}`);
 
     }
     public postPessoacpf(pessoacpf: string) {
-        return this.http.post<Campos>(``, pessoacpf)
+        return this.http.post<Campos>(`http://localhost:8080/rada-laboratorios/termoColeta/gravarTermoColeta`, pessoacpf)
     }
 
-
+    public getPessoamasp(numeromasp: string) {
+        return this.http.get<Masp1>(`http://localhost:8080/rada-laboratorios/pessoa/buscarPessoaPorMasp/${numeromasp}`);
+    }
 
 }
 

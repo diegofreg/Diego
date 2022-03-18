@@ -12,7 +12,7 @@
             <div class="div40">
           <mat-form-field appearance="fill" class="inputFieldMin">
             <mat-label>Número de Masp</mat-label>
-            <input  formControlName="numeromasp"   id="numeromasp" type="text" autocomplete="off" matInput #postalCode
+            <input (blur)="onBlur3()" formControlName="numeromasp"   id="numeromasp" type="text" autocomplete="off" matInput #postalCode
               maxlength="11" required>
             
 
@@ -91,7 +91,7 @@
 
             <div class="div100" [ngStyle]="{'display': isOpentestemunha ? 'block':  'none'}">
               <mat-form-field appearance="fill" class="inputFieldMin">
-                <mat-label>Nome</mat-label>
+                <mat-label>Testemunha1</mat-label>
                 <input [(ngModel)]="testemunhas[0].nome" formControlName="n" type="text" class="form-control" id="" matInput maxlength="100"
                   value="" name="">
               

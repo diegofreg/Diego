@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ConsultaPessoaService } from '../Services/consulta-pessoa';
 
 
 
@@ -7,6 +8,7 @@ interface TestemunhaProps {
   id: number,
   nome: string
   identidade: string
+  
 }
 
 
@@ -18,11 +20,17 @@ interface TestemunhaProps {
 export class EnvolvidosComponent implements OnInit {
   
 
+
+
+
+  
+
   isOpentestemunha:boolean=false;
 
 
   
   private _appForm!: FormGroup;
+  appService: any;
   public get appForm(): FormGroup {
     return this._appForm;
   }
@@ -56,8 +64,7 @@ export class EnvolvidosComponent implements OnInit {
   constructor(
 
 
-    
-
+    private Masp1: ConsultaPessoaService,   
     private formBuilder: FormBuilder
 
   ) {
@@ -117,12 +124,36 @@ export class EnvolvidosComponent implements OnInit {
 
   }
 
+  public onBlur3(): void {
+    const numeromasp = this.appForm.get("numeromasp")?.value;
+
+    console.log("BLUR3", numeromasp);
+
+    this.Masp1.getPessoamasp(numeromasp).subscribe(
+      ({  }) => {
+        
+const{numeromasp}=this.Masp1
+const{idPessoa,nunMaspOuRegInstituicaoConveniada,Cargo}=numeromasp
+
+console.log(idPessoa,nunMaspOuRegInstituicaoConveniada,Cargo);
+
+
+    
+        this.appForm.get("nome3")?.patchValue(idPessoa);
+        this.appForm.get("cargo1")?.patchValue(Cargo);
+        this.appForm.get("cargo1")?.patchValue(nunMaspOuRegInstituicaoConveniada);
+
+      });
+
+
+
+
 
 
 }
 
 
 
-
+}
   
 

@@ -13,7 +13,7 @@ export class DataFormService {
   constructor(private http: HttpClient) { }
 
   storeClient(cpfCnpj: string): Observable<any> {
-    
+    // JSON.parse ( this.http.get(`http://localhost:8080/rada-laboratorios/pessoa/buscarPessoaPorCpfCnpj/${cpfCnpj}`))
     const helper = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
@@ -25,8 +25,9 @@ export class DataFormService {
 
     
 
-     return this.http.get(``)
-    
+     return this.http.get(`http://localhost:8080/rada-laboratorios/pessoa/buscarPessoaPorCpfCnpj/${cpfCnpj}`)
+    // return this.http.get(`http://localhost:8080/rada-laboratorios/pessoa/buscarPessoaPorCpfCnpj/${cpfCnpj}`,headers)
+    // return this.httpClient.get<Type>(url, { responseType: "json" });
   }
 
 

@@ -1,0 +1,191 @@
+<form [formGroup]="appForm"  name="myForm" class="example-form">
+    <div class="center">
+      <div class="center">
+  
+  
+        <div class="div100">
+        <div class="div10">
+          <mat-form-field appearance="fill">
+            <mat-label>Cooedenadoria Regional </mat-label>
+            <mat-select>
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+  
+  
+        <div class="div60">
+          <mat-form-field appearance="fill">
+            <mat-label>Escritórios Abaetê</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+  
+        <div class="div30">
+          <mat-form-field appearance="fill" class="inputFieldMed">
+            <mat-label>Variedade</mat-label>
+            <input type="text" matInput name="nomefantasia" autocomplete="off" >
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+      </div>
+  
+  
+        
+        <div class="div20">
+          <mat-form-field appearance="fill" class="inputFieldMin">
+            <mat-label>Quantidade Enviada</mat-label>
+            <input  formControlName="cpf" type="text" autocomplete="off" matInput #postalCode
+              maxlength="11">
+           
+  
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+  
+  
+        <div class="div40">
+          <mat-form-field appearance="fill" class="inputFieldMed">
+            <mat-label>Número do Lacre</mat-label>
+            <input formControlName="nomeprodutor" type="text" autocomplete="off" id="nomeprodutor" matInput
+              placeholder=" " matInput name="nomeprodutor"  required>
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+  
+        <div class="div40">
+          <mat-form-field appearance="fill" class="inputFieldMed">
+            <mat-label>Nome Fantasia</mat-label>
+            <input type="text" matInput name="nomefantasia" autocomplete="off" >
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+  
+      <div class="center">
+        <div class="div20">
+            <div class="content" role="main">
+
+                <label id="example-radio-group-label">Apresentar Formulário?</label>
+                <mat-radio-group
+                  aria-label="Selecione uma opção"
+                  (change)="handleForm($event)"
+                  class="padding-bottom-20">
+                  <mat-radio-button value="1" class="padding-rigth-10">Sim</mat-radio-button>
+                  <mat-radio-button value="0" checked>Não</mat-radio-button>
+                </mat-radio-group>
+              
+                <div *ngIf="isDisplayNone">
+                  <div>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Qual?</mat-label>
+                      <input matInput value="">
+                    </mat-form-field>
+                  </div>
+                  
+                </div>
+              </div>
+            <mat-hint></mat-hint>
+          
+        </div>
+  
+        <div class="div50">
+            <mat-form-field appearance="fill" class="inputFieldMin">
+                <mat-label required>
+                  Data
+                </mat-label>
+                <input formControlName="data" id="data" required matInput [matDatepicker]="picker2">
+                <mat-datepicker-toggle matSuffix [for]="picker2">
+                </mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+              </mat-form-field>
+        </div>
+        <div class="div30">
+          <mat-form-field appearance="fill" class="inputFieldMin">
+            <mat-label>Onde Adquiriu?</mat-label>
+            <input formControlName="" type="text" name="" id="" matInput placeholder="Ex.0000000">
+  
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="div20">
+          
+        </div>
+      </div>
+  
+  
+  
+      <div class="center">
+        <div class="div40">
+          <mat-form-field appearance="fill" class="inputFieldMed">
+            <mat-label>Quem indicou o Agrotóxico</mat-label>
+            <input formControlName="bair" type="text" name="bair" id="Bairro" matInput placeholder="Ex.Gama">
+  
+            <mat-hint></mat-hint>
+          </mat-form-field>
+  
+        </div>
+        <div class="div30">
+          <mat-form-field appearance="fill" class="inputFieldMed mat-form-field-disabled">
+            <mat-label>Município</mat-label>
+            <input formControlName="local" [disabled]="true" type="text" name="local" id="localidade" maxlength="200" matInput
+              placeholder="Ex. California">
+  
+            <mat-hint></mat-hint>
+          </mat-form-field>
+  
+  
+        </div>
+        <div class="div10">
+          <mat-form-field appearance="fill" class="inputFieldMin mat-form-field-disabled">
+            <mat-label>Estado</mat-label>
+            <input formControlName="ufc"  type="text" name="ufc" id="uf" matInput placeholder="Ex.QN"
+              >
+  
+            <mat-hint></mat-hint>
+          </mat-form-field>
+  
+        </div>
+        <div class="div20">
+          <mat-form-field appearance="fill" class="inputFieldMed">
+            <mat-label>Registro no Ima</mat-label>
+            <input  disabled  type="text" name="" id="" maxlength="200" matInput placeholder="">
+  
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+  
+      </div>
+  
+      <div class="div100">
+  
+  <div class="div20">
+  
+  
+       
+  <mat-form-field appearance="fill" class="inputFieldMin">
+            <mat-label>Telefone</mat-label>
+            <input formControlName="" type="text" name="" id="" matInput placeholder="Ex.0000000">
+  
+            <mat-hint></mat-hint>
+          </mat-form-field>
+  
+  
+  
+      <div class="div100">
+        <button mat-flat-button color="primary" class="button"  type="button">Salva</button>
+      </div>
+  
+    
+  </div>
+  </div>
+  
+  </form>
+  
