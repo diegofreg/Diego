@@ -1,0 +1,170 @@
+.pergunta label {
+  width: 173px;
+}
+.pergunta input {
+  width: 40px;
+}
+#m {
+  box-shadow: none;
+}
+.firefox {
+   
+  line-height: 20px;
+  margin: 20px -20px -20px;
+  padding: 12px 0 12px 71px;
+}
+.firefox a {
+  border-bottom: 1px solid #ccc68b;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px;
+  text-decoration: none;
+}
+fieldset,
+.msg,
+#c {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+fieldset,
+.su {
+  background: none;
+}
+fieldset div {
+  padding: 0;
+}
+fieldset div input {
+  border: 0;
+  width: 100%;
+}
+fieldset div input:focus {
+  box-shadow: 0 -1px #ffd20c inset;
+  outline: none;
+}
+#g {
+  box-shadow: 1px 0 rgba(51, 55, 57, 0.07), -1px 0 rgba(51, 55, 57, 0.07);
+  margin: 150px auto auto;
+  width: 380px;
+  position: relative;
+}
+.carregando #g {
+  display: none;
+}
+fieldset div input,
+.su input,
+.msg {
+  box-shadow: 0 -1px rgba(51, 55, 57, 0.07) inset;
+  padding: 21px 24px 21px 80px !important;
+}
+.msg {
+  padding: 20px 24px 20px 76px;
+}
+fieldset div .captcha {
+  float: left;
+}
+fieldset div .captcha + input {
+  padding-left: 24px;
+  width: calc(100% - 228px);
+}
+.su input {
+  background: #f1f2f2;
+  color: #333739;
+  cursor: pointer;
+  width: 100% !important;
+  text-align: left;
+}
+.su input:active {
+  background: #eaebeb;
+}
+.su input:focus {
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.2) inset;
+}
+.ic {
+  position: absolute;
+  margin: 18px 32px;
+  pointer-events: none;
+}
+.ic.pro {
+  -webkit-filter: brightness(0%);
+  filter: brightness(0%);
+  opacity: 0.3;
+}
+.item.d {
+  margin: 0 -1px;
+}
+.identidade {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.identidade,
+.identidade h5 {
+  color: #333739;
+}
+.identidade li {
+  position: absolute;
+  padding: 24px 24px 0 80px;
+   
+  opacity: 0;
+}
+.identidade .at {
+  opacity: 0.5;
+}
+@media screen and (min-width: 460px) {
+  .logo-brasao:before {
+     
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3) inset;
+    margin-right: 16px;
+  }
+  [class^="fundo-"]:before {
+    content: "";
+    background: center center / 100% auto no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 210px;
+    -webkit-filter: grayscale(100%) contrast(150%);
+    filter: grayscale(100%) contrast(150%);
+    opacity: 0.5;
+  }
+  .fundo-1:before {
+     
+  }
+  .fundo-2:before {
+    
+  }
+  .fundo-3:before {
+     
+  }
+  .fundo-4:before {
+     
+  }
+  .fundo-5:before {
+     
+  }
+}
+@media screen and (max-width: 840px) {
+  [class^="fundo-"]:before {
+    background-size: auto 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .logo-brasao:before {
+    content: none;
+  }
+  #g,
+  .pergunta label {
+    border: 0;
+    margin: 0;
+    width: auto;
+  }
+  fieldset div .captcha {
+    width: 120px;
+  }
+  fieldset div .captcha + input {
+    width: calc(100% - 168px);
+  }
+}

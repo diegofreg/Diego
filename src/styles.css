@@ -1,0 +1,2630 @@
+* {
+  margin: 0;
+}
+body:not(.carregando) {
+  background: linear-gradient(#467caa 210px, #f4f5f5 210px) no-repeat #f4f5f5;
+}
+body:not(.carregando) h2 {
+  display: none;
+}
+
+.jm-central h1,
+.na a,
+.elip,
+.op a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#m h1,
+.info,
+.erro,
+.alerta,
+.ok,
+.conf,
+.pla,
+.ad2,
+.es,
+.ad,
+.aj,
+.sa,
+.pasta,
+.ca,
+.as,
+.ed,
+.im,
+.pr,
+.hi,
+.an,
+.txt,
+.man,
+.usr,
+.graf,
+.mais,
+.menos,
+.ant,
+.pro,
+.cim,
+.bai,
+.fa,
+.fav,
+.ch,
+.sair,
+.ex,
+.fe,
+.fe2,
+.resp,
+.enc,
+.carta,
+.senha,
+.aberto,
+.opc,
+.dock,
+.info2,
+.ch2,
+.cc,
+.pdf,
+.local,
+.ord {
+  background-image: url(/assets/i.svg);
+  background-repeat: no-repeat;
+  height: 10%;
+}
+body,
+h2 a {
+  font: 13px / 1.55 arial, sans-serif;
+}
+#n,
+.menor,
+#c1 footer {
+  font-size: 0.846em;
+  line-height: 1.46;
+}
+p,
+h2,
+h3,
+.msg,
+.t2 {
+  margin: 0 0 16px;
+}
+body,
+h2 a,
+.c-list,
+a.c-list:hover,
+.item,
+a.item:hover {
+  color: #333739;
+}
+.t1 tr:hover,
+a.c-list:not(.se):hover,
+a.item:not(.se):hover {
+  background-color: rgba(243, 255, 25, 0.24);
+}
+input,
+textarea,
+select,
+button {
+  background: #fff;
+  border: 1px solid;
+  border-color: rgba(51, 55, 57, 0.12) rgba(51, 55, 57, 0.12)
+    rgba(51, 55, 57, 0.24);
+  font: 1em / 18px arial, sans-serif;
+  padding: 7px;
+  box-sizing: border-box;
+}
+input:invalid:required,
+input.invalid,
+textarea:invalid:required,
+textarea.invalid,
+select:invalid:required,
+select.invalid {
+  box-shadow: 0 -1px rgba(232, 32, 23, 0.5) inset;
+}
+select {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5'%3E%3Cpath d='M0 0h10L5 5z' fill='%2380888a'/%3E%3C/svg%3E")
+    right 10px center no-repeat #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 26px;
+}
+select:not([size]):not([multiple]) {
+  height: 34px;
+}
+.f-g select:not([size]):not([multiple]) {
+  height: 40px;
+}
+.t1 select:not([size]):not([multiple]) {
+  height: 24px;
+}
+.ac select {
+  height: auto;
+  left: 0;
+  top: 16px;
+  width: 100%;
+  z-index: 7;
+}
+.msg,
+.pa .at {
+  background-color: #fcffc8;
+  color: #cc5214;
+  border: 1px solid #ffdf9d;
+}
+.no,
+#s,
+.mod li,
+.thumb,
+.c-list.no,
+.item.no,
+.contr.at + span,
+#r,
+.so-im {
+  display: none;
+}
+.ac select,
+#c1,
+.flu,
+.jm,
+#n,
+.abs,
+.jm .fe,
+.thumb,
+.play,
+.menu {
+  position: absolute;
+}
+h1,
+#m {
+  background: #28689f;
+}
+#m a,
+#m li,
+.ar dl,
+.esq {
+  float: left;
+}
+#m ul,
+#c3,
+.op,
+h2 > span,
+.n-msg,
+.direita,
+.su > span,
+h4 span,
+.jm .fe2 {
+  float: right;
+}
+#m2 {
+  padding: 0;
+  right: 0;
+  top: 60px;
+  width: 800px;
+  border-width: 0 0 1px 1px;
+  z-index: 9998;
+}
+#m ul,
+h2,
+.su,
+h4,
+.ar,
+.c-foto,
+.mod li,
+.chat {
+  overflow: hidden;
+}
+.ab,
+.rol {
+  overflow: auto;
+}
+.c-list,
+.item,
+.t2 dd:not(:last-child),
+.t2 tr:not(:last-child) td,
+.t1 td {
+  box-shadow: 0 -1px rgba(51, 55, 57, 0.07) inset;
+}
+.t1,
+.t2,
+.grid input,
+.grid select,
+.tam-max {
+  width: 100%;
+}
+.t1 {
+  border-collapse: collapse;
+}
+.t1 th,
+.t1 td {
+  padding: 5px;
+}
+.t1 th {
+  box-shadow: 0 -1px rgba(40, 104, 159, 0.2) inset;
+  text-align: left;
+}
+.t1 button {
+  padding: 3px 8px;
+  margin: -2px 0;
+}
+.t1 input,
+.t1 select {
+  padding: 2px 4px;
+  margin: -2px 0;
+}
+.t1 select {
+  padding-right: 26px;
+}
+#m,
+.ac,
+.ob label:first-child,
+#u1,
+.op,
+.jm .relat .fe,
+.c-foto,
+.mod,
+.c-list,
+.item,
+.n-msg,
+.busca .fe,
+.video,
+.rel,
+.meuperfil {
+  position: relative;
+}
+.c-foto {
+  border-radius: 5px;
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin: -10px 10px 0 0;
+}
+.foto-mini {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: -2px 6px -2px 0;
+}
+.ob label:first-child:after {
+  content: "*";
+  color: #e82017;
+  position: absolute;
+  font-size: 18px;
+  right: 3px;
+}
+.f-g .ob label:first-child:after {
+  display: inline-block;
+  position: relative;
+  line-height: 20px;
+  vertical-align: top;
+  margin: 4px 0 -4px 10px;
+}
+.t1 a:hover,
+#n a:hover {
+  color: #e82017;
+  text-decoration: underline;
+}
+#m a,
+.op a {
+  color: rgba(255, 255, 255, 0.88);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+.jm,
+.l,
+h3 a,
+.pa a {
+  border: 1px solid #eaebeb;
+}
+.jm {
+  border-color: #cacdce #abb0b1 #abb0b1 #cacdce;
+  padding: 16px;
+}
+.jm h1 {
+  margin: -16px -16px 16px;
+}
+.jm .fe {
+  right: 0;
+  top: 1px;
+}
+.jm .fe2 {
+  margin: -3px -7px -3px 6px;
+}
+.jm.direita {
+  right: 24px;
+}
+#n a,
+#m .mod a {
+  padding: 0 5px;
+}
+h4,
+.t1 th {
+  font-weight: 400;
+}
+#c1 dd a,
+.na a,
+.mod:hover li,
+.mod.show li,
+.mod .at,
+#m .mod a,
+.c-list:hover + .thumb,
+.thumb:hover,
+.thumb.at,
+.c-list,
+.item,
+.contr,
+.ar a,
+.resposta {
+  display: block;
+}
+.pa {
+  padding: 15px 5px;
+}
+.pa a {
+  padding: 1px 8px;
+}
+.pa .at {
+  background: #fcffc8;
+}
+.c,
+.t1 .c {
+  text-align: center;
+}
+.l {
+  padding: 0 4px;
+}
+.ne,
+#c1 .at,
+.ar dt {
+  font-weight: 700;
+}
+fieldset {
+  border: 1px solid #f4f5f5;
+  margin: 0 0 10px;
+  padding: 8px;
+}
+fieldset input,
+fieldset select {
+  width: 320px;
+}
+fieldset table {
+  border-spacing: 0;
+}
+fieldset textarea {
+  display: inherit;
+  height: 70px;
+  overflow: auto;
+}
+fieldset textarea,
+fieldset .tam-max {
+  width: 100%;
+}
+fieldset .link {
+  margin: 5px 0;
+}
+fieldset label ~ textarea,
+fieldset label ~ .tam-max {
+  width: calc(100% - 172px);
+}
+fieldset:not(.f-g):not(.f-v) label:first-child {
+  text-align: right;
+  float: left;
+}
+fieldset > div,
+fieldset .linha-form {
+  clear: both;
+  min-height: 34px;
+  padding: 2px;
+}
+.t2 th,
+.t2 dt,
+.d:not(.arquivo),
+.t1 .d {
+  text-align: right;
+}
+.f2,
+.f3,
+.f4,
+.zd {
+  clear: none;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+.f3 {
+  width: 33.3%;
+}
+.f4 {
+  width: 25%;
+}
+.f1 input,
+.f1 select,
+.zd,
+.zl label:first-child,
+[type="file"],
+.mod .at a,
+.c-list {
+  width: auto;
+}
+label {
+  padding: 7px 16px 7px 0;
+  display: inline-block;
+  line-height: 20px;
+}
+input + label,
+select + label,
+a + label {
+  padding-left: 16px;
+}
+label:first-child {
+  width: 156px;
+}
+.lm label:first-child {
+  width: 96px;
+}
+.lm label:first-child ~ textarea,
+.lm label:first-child ~ .tam-max {
+  width: calc(100% - 112px);
+}
+.lg label:first-child {
+  width: 320px;
+}
+.zl label:first-child {
+  padding-left: 10px;
+}
+.f2 input,
+.f2 select {
+  width: 176px;
+}
+.f3 input,
+.f3 select,
+.tam-data,
+.f1 .tam-data,
+.f2 .tam-data {
+  width: 92px;
+}
+.clear,
+.separ,
+#expContatosPos {
+  clear: both;
+}
+.tam-m {
+  width: 120px;
+}
+.tam-p {
+  width: 50px;
+}
+.tam-hora {
+  width: 56px !important;
+}
+.tam-ic {
+  width: 24px;
+}
+[type="checkbox"],
+[type="radio"] {
+  border: 0;
+  height: 20px;
+  vertical-align: bottom;
+  width: 16px !important;
+}
+fieldset [type="checkbox"],
+fieldset [type="radio"] {
+  height: 34px;
+  vertical-align: middle;
+}
+fieldset table [type="checkbox"],
+fieldset table [type="radio"] {
+  vertical-align: middle;
+}
+label [type="checkbox"],
+label [type="radio"] {
+  height: 20px;
+}
+h1,
+h3,
+h5 {
+  font-size: 14px;
+  line-height: 32px;
+}
+h1 {
+  padding: 11px 16px;
+  line-height: 18px;
+}
+h1.at {
+  background: #112c43;
+}
+h1.carr:before {
+  right: 32px;
+  margin: -1px 0 0 0;
+}
+h2 {
+  font-size: 17px;
+  line-height: 2;
+}
+h2.direita {
+  margin: 9px 0 0 22px;
+}
+h2 + .az {
+  margin-top: -16px;
+}
+h2 .ant:first-child {
+  margin-right: 12px;
+}
+h2 .sem-ic {
+  padding-left: 6px;
+}
+.aleta:before {
+  content: "";
+  border: 4px solid transparent;
+  border-top-color: #80888a;
+  float: right;
+  margin: 8px 0 0 6px;
+}
+h1 .aleta:before {
+  border-width: 6px;
+  border-top-color: rgba(255, 255, 255, 0.6);
+  margin: 9px 0 0 10px;
+}
+#m {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+#m ul {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.09), transparent 10px);
+  border-right: 1px solid rgba(0, 0, 0, 0.16);
+  margin: -60px 0 0 0;
+  padding: 9px 23px;
+}
+#m ul:not(.mod) .at a {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#m h1 {
+  padding: 18px 24px;
+  font-size: 18px;
+  line-height: 24px;
+}
+#m h1 a {
+  float: none;
+  color: #fff;
+  margin: -10px;
+  display: inline-block;
+  padding: 8px 10px;
+}
+#m .mod {
+  padding: 5px 19px;
+  line-height: 40px;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out,
+    box-shadow 200ms ease-in-out;
+}
+#m .mod:hover {
+  background-color: #235b8b;
+  border-left: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.6);
+}
+#m .mod a {
+  font-size: 14px;
+  margin: 5px;
+  opacity: 0.9;
+  outline: 0;
+  transition: none;
+  white-space: nowrap;
+}
+#m .mod a:hover {
+  opacity: 0.95;
+}
+#m .mod .at a {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.6);
+}
+.t2 {
+  border: 1px solid rgba(51, 55, 57, 0.07);
+  border-spacing: 0;
+}
+.t2 dt,
+.t2 dd {
+  flex: 0 0 166px;
+}
+.t2 th {
+  width: 166px;
+}
+.t2 dt,
+.t2 th {
+  padding: 5px 10px 5px 0;
+}
+.t2 dt {
+  font-weight: 700;
+}
+.t2 dd,
+.t2 td {
+  padding: 5px 6px;
+}
+.t2 dd {
+  flex-basis: calc(100% - 188px);
+}
+dl.t2 {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.jm,
+.flu {
+  z-index: 8;
+}
+.ic,
+h2 a,
+h4 a,
+.su a {
+  border: 1px solid transparent;
+}
+.carr:before,
+.carr + .proc2:before,
+.carregando:before {
+  content: "";
+  border: 2px solid rgba(26, 67, 102, 0.2);
+  border-top-color: #1a4366;
+  -webkit-animation: c 0.6s linear infinite;
+  animation: c 0.6s linear infinite;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0 0 0 -26px;
+}
+.ic {
+  min-width: 22px;
+  line-height: 22px;
+}
+fieldset input ~ .ic,
+fieldset select ~ .ic {
+  min-width: 32px;
+  line-height: 32px;
+}
+.ic:empty:after {
+  content: " ";
+}
+.ic.carr:before {
+  margin: 1px;
+}
+.ic.de.carr:before {
+  margin-left: -25px;
+}
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+.ic:not(.no),
+a.link,
+h3 a,
+.chat,
+.elip,
+.pa a {
+  display: inline-block;
+}
+.c-list {
+  padding: 16px 6px;
+}
+[type="button"],
+[type="submit"],
+button {
+  background: linear-gradient(#3283c8, #28689f) #28689f;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+  color: #fff;
+  width: auto !important;
+  padding: 8px 16px;
+}
+button.ve {
+  background: linear-gradient(#ed4d45, #e82017) #e82017;
+  color: #fff;
+}
+button.ve[disabled] {
+  color: #fff;
+  opacity: 0.6;
+}
+button.branco {
+  background: #fff;
+}
+button.branco.ve {
+  color: #e82017;
+  box-shadow: 0 0 0 1px rgba(232, 32, 23, 0.6) inset;
+}
+button.branco.ve:hover {
+  box-shadow: 0 0 0 1px #e82017 inset;
+}
+button.branco.verde {
+  box-shadow: 0 0 0 1px rgba(0, 174, 64, 0.6) inset;
+}
+button.branco.verde:hover {
+  box-shadow: 0 0 0 1px #00ae40 inset;
+}
+button.branco.az {
+  color: #28689f;
+  box-shadow: 0 0 0 1px rgba(85, 139, 185, 0.6) inset;
+}
+button.branco.az:hover {
+  box-shadow: 0 0 0 1px #558bb9 inset;
+}
+h3 a,
+.pa a {
+  background: linear-gradient(
+      to top,
+      rgba(51, 55, 57, 0.05),
+      rgba(51, 55, 57, 0) 16px
+    )
+    #f4f5f5;
+}
+h3 {
+  box-shadow: 0 -1px #558bb9 inset;
+}
+h3 a {
+  border-color: rgba(51, 55, 57, 0.12) rgba(51, 55, 57, 0.12) #558bb9
+    transparent;
+  padding: 0 1em;
+}
+h3 a:not(.at) {
+  margin: 0 0 1px;
+  border-bottom: 0;
+}
+h3 a:first-child:not(.at) {
+  border-left-color: rgba(51, 55, 57, 0.12);
+}
+h3 .at {
+  border-color: #558bb9 #558bb9 #fff;
+}
+.ic,
+.link {
+  margin: -2px 0;
+}
+a.link {
+  border: 1px solid rgba(40, 104, 159, 0.5);
+  border-radius: 2px;
+  padding: 1px 8px;
+}
+a.link:hover {
+  border-color: #28689f;
+  color: #28689f;
+  background: #fff;
+  text-decoration: none;
+}
+[disabled] {
+  border-color: rgba(51, 55, 57, 0.12);
+}
+.bl,
+[disabled] {
+  background: #f1f2f2;
+  color: #aaa;
+}
+[readonly] {
+  background: none;
+  border-color: rgba(51, 55, 57, 0.07);
+}
+.leitura {
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.07) inset;
+  box-sizing: border-box;
+}
+h2 a,
+h4 a,
+.su a,
+.op a {
+  float: left;
+  margin: 0 0 0 2px;
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+}
+h2 a,
+.su a {
+  line-height: 20px;
+}
+h2 a:empty,
+.su a:empty {
+  height: 20px;
+  padding: 6px 6px 6px 26px;
+}
+h2 > a:first-child,
+.su > a:first-child {
+  margin: 0;
+}
+h2 .at,
+.su .at {
+  border-color: #ffdf9d;
+  box-shadow: 0 0 0 1px #ffdf9d inset, 0 0 20px rgba(255, 223, 157, 0.24) inset;
+}
+.msg,
+.separ,
+.busca {
+  padding: 6px;
+}
+.jm-central {
+  padding-top: 50px;
+  width: 686px;
+  top: 84px;
+  left: calc(50% - 360px);
+  position: fixed;
+  z-index: 11;
+}
+.jm-central h1 {
+  margin-top: -50px;
+}
+.jm-central .rol {
+  margin: -16px;
+  padding: 16px;
+  max-height: calc(100vh - 236px);
+}
+.jm-central .auto-comp {
+  position: fixed;
+}
+.de {
+  padding-left: 32px;
+}
+.de.ic {
+  padding: 0 6px 0 26px;
+}
+fieldset input ~ .de.ic {
+  padding-left: 32px;
+}
+.item .de.ic {
+  padding-left: 30px;
+}
+#m a,
+.op a {
+  border-radius: 5px;
+  margin: 1px;
+  padding: 10px;
+}
+#m a:hover,
+.op a:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+div.na {
+  margin: 0 0 12px;
+}
+div.na a {
+  padding: 8px 12px;
+}
+div.na .at {
+  box-shadow: 0 0 0 2px #ffdf9d inset, 0 0 20px rgba(255, 223, 157, 0.24) inset;
+}
+div.na a:not(.at):hover {
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.12) inset;
+}
+.t1 a,
+#m a,
+.pa a,
+.ic,
+#c1 a,
+a.ic:hover,
+#n a,
+.ar a,
+h3 a,
+.c-list,
+.item,
+.ab a,
+.link {
+  text-decoration: none;
+}
+fieldset,
+.voltar {
+  background-color: #fbfbfc;
+}
+.ma,
+.item,
+.menu,
+.leitura {
+  padding: 10px;
+}
+.ch-se {
+  padding-left: 40px;
+}
+.ch-se.se {
+   background: url(/assets/i.svg) 10px -5390px no-repeat #e9f0f7; 
+}
+h2 a:hover,
+a.ic:hover {
+  border-color: #ffdf9d;
+}
+.voltar,
+.su .voltar {
+  border-color: #eaebeb;
+  border-radius: 2px;
+  margin: 0 3px 0 0 !important;
+  padding: 6px 1em;
+}
+.msg + .msg {
+  border-top: 0;
+  margin-top: -17px;
+}
+.c-user .msg {
+  margin: 0;
+}
+.msg span {
+  padding: 8px 27px 8px 0;
+  margin: 0 0 0 -16px;
+}
+.zd {
+  margin-right: 10px;
+}
+.transp,
+.marcadagua,
+#c1 footer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#c1 {
+  width: 150px;
+  left: 0;
+  top: 60px;
+  z-index: 3;
+}
+#c1 dl {
+  margin: 0 -24px;
+}
+#c1 dd a {
+  color: rgba(51, 55, 57, 0.75);
+}
+#c1 dd a:not(.ic):hover {
+  background-color: rgba(51, 55, 57, 0.06);
+}
+#c1 .at,
+#c1 .at:not(.ic):hover {
+  background-color: rgba(51, 55, 57, 0.12);
+  color: #333739;
+}
+#c1 dd a:not(.ic),
+#c1 dt {
+  padding: 10px 24px;
+}
+#c1 dd + dt,
+#c1 dl:not(.no) + dl {
+  margin-top: 12px;
+}
+#c1 dt {
+  color: #558bb9;
+}
+#c1 footer {
+  color: rgba(51, 55, 57, 0.5);
+  top: auto;
+  padding: 24px;
+  width: 150px;
+}
+#c1:not(.no) ~ #c2,
+#c1:not(.no) ~ * #c2 {
+  margin-left: 198px;
+}
+.central #c1:not(.no) ~ #c2,
+.central #c1:not(.no) ~ * #c2 {
+  margin-left: 0;
+}
+#c1:not(.no) ~ #c2:before,
+#c1:not(.no) ~ * #c2:before {
+  content: "";
+  background: #f4f5f5;
+  box-shadow: -5px 0 20px -10px rgba(51, 55, 57, 0.24) inset;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 198px;
+  bottom: 0;
+  z-index: 1;
+}
+ul,
+#m li,
+.arquivo .c-list,
+#c1 .pa {
+  box-shadow: none;
+  list-style: none;
+  padding: 0;
+}
+div.na,
+#c1 .pa a {
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.07) inset,
+    0 0 10px rgba(51, 55, 57, 0.07) inset;
+}
+#c1 .pa a {
+  border: 0;
+  margin: 6px 24px 0;
+  padding: 8px 12px;
+}
+#c1 .pa a:not(:hover) {
+  background: none;
+}
+#c3 {
+  margin: 0 0 24px 24px;
+  width: 250px;
+}
+#c3:not(.no) + #c2 {
+  margin-right: 274px;
+}
+a,
+.se,
+h3 .at,
+.ab .at,
+.ab a:hover {
+  color: #000;
+}
+h5,
+h5 a,
+a.link,
+.ar dt,
+h2,
+a:hover,
+.links a,
+.links a:hover {
+  color: #28689f;
+}
+#n,
+#n a,
+h3 a,
+.pa,
+.tc,
+.ab a,
+[type="button"][disabled],
+[type="submit"][disabled],
+button[disabled],
+button[disabled]:active {
+  color: #80888a;
+}
+legend,
+small,
+.az,
+.t1 th,
+.t1 th a,
+.t1 th a:hover {
+  color: #558bb9;
+}
+.opac0,
+#n {
+  opacity: 0;
+}
+#n {
+  margin: -26px 0 0;
+  padding: 5px 15px;
+  transition: all 0.2s ease-in-out;
+  z-index: 4;
+}
+#m:hover ~ #n,
+.op:hover ~ #n,
+#n:hover,
+.jm {
+  margin: 0;
+  box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+h5 a:hover,
+.ve {
+  color: #e82017;
+}
+optgroup {
+  font: 700 1em arial, sans-serif;
+  text-indent: 3px;
+}
+h1,
+#m .at a,
+#m a:hover {
+  color: #fff;
+}
+.play {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  background: url(/assets/i.svg) -184px -6184px no-repeat rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  top: calc(50% - 26px);
+  left: calc(50% - 50px);
+  padding: 16px 2px 16px 46px;
+  text-align: left;
+  width: 52px;
+}
+.play:empty {
+  padding: 0;
+  height: 52px;
+  left: calc(50% - 26px);
+}
+.am {
+  color: #ffeb3b;
+}
+.verde {
+  color: #00ae40;
+}
+.espera,
+.opac05 {
+  opacity: 0.5;
+}
+.n-msg {
+  border-radius: 5px;
+  background: #f2f9d9;
+  padding: 2px 5px;
+  margin: -2px 0 -2px -50px;
+}
+.op .n-msg {
+  background: #9b3d4e;
+}
+.t2,
+.ci,
+.l {
+  background-color: #f4f5f5;
+}
+body,
+.t2 td,
+.t2 dd,
+.jm,
+h3 .at,
+.pa a:hover,
+#n,
+.thumb,
+.t1 th {
+  background: #fff;
+}
+.arquivo b {
+  display: block;
+  margin: 8px 8px 0;
+}
+.se,
+.se td,
+.ab {
+  background-color: rgba(40, 104, 159, 0.17);
+}
+#m li,
+h3 a:hover,
+ul.msg li,
+input:active,
+button:active {
+  background-image: none;
+}
+th.as:after,
+.ds:after {
+  content: "";
+  display: inline-block;
+  margin: 0 0 0 6px;
+  vertical-align: inherit;
+  border: solid;
+  border-color: #558bb9 transparent;
+  border-width: 4px 4px 0;
+}
+th.as:after {
+  border-width: 0 4px 4px;
+}
+.info,
+fieldset input ~ .info.ic,
+fieldset select ~ .info.ic {
+  background-position: 6px -114px;
+}
+.info.ic {
+  background-position: 1px -119px;
+}
+.erro,
+fieldset input ~ .erro.ic,
+fieldset select ~ .erro.ic {
+  background-position: 6px -234px;
+}
+.erro.ic {
+  background-position: 1px -239px;
+}
+.alerta,
+fieldset input ~ .alerta.ic,
+fieldset select ~ .alerta.ic {
+  background-position: 6px -354px;
+}
+.alerta.ic {
+  background-position: 1px -359px;
+}
+.ok,
+fieldset input ~ .ok.ic,
+fieldset select ~ .ok.ic {
+  background-position: 6px -474px;
+}
+.ok.ic {
+  background-position: 1px -479px;
+}
+.conf,
+fieldset input ~ .conf.ic,
+fieldset select ~ .conf.ic {
+  background-position: 6px -594px;
+}
+.conf.ic {
+  background-position: 1px -599px;
+}
+.pla,
+fieldset input ~ .pla.ic,
+fieldset select ~ .pla.ic {
+  background-position: 6px -714px;
+}
+.pla.ic {
+  background-position: 1px -719px;
+}
+.ad2,
+fieldset input ~ .ad2.ic,
+fieldset select ~ .ad2.ic {
+  background-position: 6px -834px;
+}
+.ad2.ic {
+  background-position: 1px -839px;
+}
+.es,
+fieldset input ~ .es.ic,
+fieldset select ~ .es.ic {
+  background-position: 6px -954px;
+}
+.es.ic {
+  background-position: 1px -959px;
+}
+.ad,
+fieldset input ~ .ad.ic,
+fieldset select ~ .ad.ic {
+  background-position: 6px -1074px;
+}
+.ad.ic {
+  background-position: 1px -1079px;
+}
+.aj,
+fieldset input ~ .aj.ic,
+fieldset select ~ .aj.ic {
+  background-position: 6px -1194px;
+}
+.aj.ic {
+  background-position: 1px -1199px;
+}
+.sa,
+fieldset input ~ .sa.ic,
+fieldset select ~ .sa.ic {
+  background-position: 6px -1314px;
+}
+.sa.ic {
+  background-position: 1px -1319px;
+}
+.pasta,
+fieldset input ~ .pasta.ic,
+fieldset select ~ .pasta.ic {
+  background-position: 6px -1434px;
+}
+.pasta.ic {
+  background-position: 1px -1439px;
+}
+.ca,
+fieldset input ~ .ca.ic,
+fieldset select ~ .ca.ic {
+  background-position: 6px -1554px;
+}
+.ca.ic {
+  background-position: 1px -1559px;
+}
+.as,
+fieldset input ~ .as.ic,
+fieldset select ~ .as.ic {
+  background-position: 6px -1674px;
+}
+.as.ic {
+  background-position: 1px -1679px;
+}
+.ed,
+fieldset input ~ .ed.ic,
+fieldset select ~ .ed.ic {
+  background-position: 6px -1794px;
+}
+.ed.ic {
+  background-position: 1px -1799px;
+}
+.im,
+fieldset input ~ .im.ic,
+fieldset select ~ .im.ic {
+  background-position: 6px -1914px;
+}
+.im.ic {
+  background-position: 1px -1919px;
+}
+.pr,
+fieldset input ~ .pr.ic,
+fieldset select ~ .pr.ic {
+  background-position: 6px -2034px;
+}
+.pr.ic {
+  background-position: 1px -2039px;
+}
+.hi,
+fieldset input ~ .hi.ic,
+fieldset select ~ .hi.ic {
+  background-position: 6px -2154px;
+}
+.hi.ic {
+  background-position: 1px -2159px;
+}
+.an,
+fieldset input ~ .an.ic,
+fieldset select ~ .an.ic {
+  background-position: 6px -2274px;
+}
+.an.ic {
+  background-position: 1px -2279px;
+}
+.txt,
+fieldset input ~ .txt.ic,
+fieldset select ~ .txt.ic {
+  background-position: 6px -2394px;
+}
+.txt.ic {
+  background-position: 1px -2399px;
+}
+.man,
+fieldset input ~ .man.ic,
+fieldset select ~ .man.ic {
+  background-position: 6px -2514px;
+}
+.man.ic {
+  background-position: 1px -2519px;
+}
+.usr,
+fieldset input ~ .usr.ic,
+fieldset select ~ .usr.ic {
+  background-position: 6px -2634px;
+}
+fieldset .usr.ic {
+  background-position: 1px -2639px;
+}
+.graf,
+fieldset input ~ .graf.ic,
+fieldset select ~ .graf.ic {
+  background-position: 6px -2754px;
+}
+.graf.ic {
+  background-position: 1px -2759px;
+}
+.mais,
+fieldset input ~ .mais.ic,
+fieldset select ~ .mais.ic {
+  background-position: 6px -2874px;
+}
+.mais.ic {
+  background-position: 1px -2879px;
+}
+.menos,
+fieldset input ~ .menos.ic,
+fieldset select ~ .menos.ic {
+  background-position: 6px -2994px;
+}
+.menos.ic {
+  background-position: 1px -2999px;
+}
+.ant,
+fieldset input ~ .ant.ic,
+fieldset select ~ .ant.ic {
+  background-position: 6px -3114px;
+}
+.ant.ic {
+  background-position: 1px -3119px;
+}
+.pro,
+fieldset input ~ .pro.ic,
+fieldset select ~ .pro.ic {
+  background-position: 6px -3234px;
+}
+.pro.ic {
+  background-position: 1px -3239px;
+}
+.cim,
+fieldset input ~ .cim.ic,
+fieldset select ~ .cim.ic {
+  background-position: 6px -3354px;
+}
+.cim.ic {
+  background-position: 1px -3359px;
+}
+.bai,
+fieldset input ~ .bai.ic,
+fieldset select ~ .bai.ic {
+  background-position: 6px -3474px;
+}
+.bai.ic {
+  background-position: 1px -3479px;
+}
+.fa,
+fieldset input ~ .fa.ic,
+fieldset select ~ .fa.ic {
+  background-position: 6px -3594px;
+}
+.fa.ic {
+  background-position: 1px -3599px;
+}
+.fav,
+fieldset input ~ .fav.ic,
+fieldset select ~ .fav.ic {
+  background-position: 6px -3714px;
+}
+.fav.ic {
+  background-position: 1px -3719px;
+}
+.ch,
+fieldset input ~ .ch.ic,
+fieldset select ~ .ch.ic {
+  background-position: 6px -3834px;
+}
+.ch.ic {
+  background-position: 1px -3839px;
+}
+.sair,
+fieldset input ~ .sair.ic,
+fieldset select ~ .sair.ic {
+  background-position: 6px -3954px;
+}
+.sair.ic {
+  background-position: 1px -3959px;
+}
+.ex,
+fieldset input ~ .ex.ic,
+fieldset select ~ .ex.ic {
+  background-position: 6px -4074px;
+}
+.ex.ic {
+  background-position: 1px -4079px;
+}
+.fe,
+fieldset input ~ .fe.ic,
+fieldset select ~ .fe.ic {
+  background-position: 6px -4194px;
+}
+.fe.ic {
+  background-position: 1px -4199px;
+}
+.fe2,
+fieldset input ~ .fe2.ic,
+fieldset select ~ .fe2.ic {
+  background-position: 6px -4314px;
+}
+.fe2.ic {
+  background-position: 1px -4319px;
+}
+.resp,
+fieldset input ~ .resp.ic,
+fieldset select ~ .resp.ic {
+  background-position: 6px -4434px;
+}
+.resp.ic {
+  background-position: 1px -4439px;
+}
+.enc,
+fieldset input ~ .enc.ic,
+fieldset select ~ .enc.ic {
+  background-position: 6px -4554px;
+}
+.enc.ic {
+  background-position: 1px -4559px;
+}
+.carta,
+fieldset input ~ .carta.ic,
+fieldset select ~ .carta.ic {
+  background-position: 6px -4674px;
+}
+.carta.ic {
+  background-position: 1px -4679px;
+}
+.senha,
+fieldset input ~ .senha.ic,
+fieldset select ~ .senha.ic {
+  background-position: 6px -4794px;
+}
+.senha.ic {
+  background-position: 1px -4799px;
+}
+.aberto,
+fieldset input ~ .aberto.ic,
+fieldset select ~ .aberto.ic {
+  background-position: 6px -4914px;
+}
+.aberto.ic {
+  background-position: 1px -4919px;
+}
+.opc,
+fieldset input ~ .opc.ic,
+fieldset select ~ .opc.ic {
+  background-position: 6px -5034px;
+}
+.opc.ic {
+  background-position: 1px -5039px;
+}
+.dock,
+fieldset input ~ .dock.ic,
+fieldset select ~ .dock.ic {
+  background-position: 6px -5154px;
+}
+.dock.ic {
+  background-position: 1px -5159px;
+}
+.info2,
+fieldset input ~ .info2.ic,
+fieldset select ~ .info2.ic {
+  background-position: 6px -5274px;
+}
+.info2.ic {
+  background-position: 1px -5279px;
+}
+.ch2,
+fieldset input ~ .ch2.ic,
+fieldset select ~ .ch2.ic {
+  background-position: 6px -5394px;
+}
+.ch2.ic {
+  background-position: 1px -5399px;
+}
+.cc,
+fieldset input ~ .cc.ic,
+fieldset select ~ .cc.ic {
+  background-position: 6px -5514px;
+}
+.cc.ic {
+  background-position: 1px -5519px;
+}
+.pdf,
+fieldset input ~ .pdf.ic,
+fieldset select ~ .pdf.ic {
+  background-position: 6px -5634px;
+}
+.pdf.ic {
+  background-position: 1px -5639px;
+}
+.local,
+fieldset input ~ .local.ic,
+fieldset select ~ .local.ic {
+  background-position: 6px -5754px;
+}
+.local.ic {
+  background-position: 1px -5759px;
+}
+.ord,
+fieldset input ~ .ord.ic,
+fieldset select ~ .ord.ic {
+  background-position: 6px -5874px;
+}
+.ord.ic {
+  background-position: 1px -5879px;
+}
+li {
+  padding: 0 0 0 10px;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='12'%3E%3Cpath d='M0 9h4v3H0z' fill='%23cacdce'/%3E%3C/svg%3E")
+    no-repeat;
+}
+.flu {
+  margin: -34px 0 0;
+}
+.grid td,
+.pointer,
+.contr {
+  cursor: pointer;
+}
+.rol-lateral {
+  overflow-x: auto;
+}
+.meuperfil:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='11' fill='%23fff'%3E%3Cpath d='M0 6v2h10V6zm0 3v1h6v1h4V9z'/%3E%3Cpath d='M0 8h10v3H0z' opacity='.5'/%3E%3C/svg%3E")
+    0 bottom no-repeat #80888a;
+  top: 10px;
+  left: 11px;
+  height: 11px;
+}
+.c-user {
+  border-width: 0 1px 1px;
+  padding: 0;
+  right: 66px;
+  width: 280px;
+  top: 60px;
+  z-index: 9999;
+}
+.c-user > assets {
+  float: left;
+  margin: 0 0 6px;
+  width: 30px;
+  height: 40px;
+}
+.comp-caixa {
+  padding: 20px 10px;
+}
+assets,
+.ab .voltar {
+  background: none;
+  border: 0;
+}
+.elip {
+  max-width: 210px;
+  margin: 0 0 -6px;
+}
+.separ {
+  box-shadow: 0 1px rgba(51, 55, 57, 0.07) inset;
+}
+.rol {
+  max-height: 380px;
+}
+.transp {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.transp + .flu {
+  z-index: 11;
+}
+.fixo {
+  position: fixed;
+}
+.fixo.flu {
+  margin: 0;
+  top: 0;
+}
+.thumb {
+  right: 6px;
+  margin: -46px 0 0;
+  padding: 17px 14px 11px;
+}
+.thumb:hover {
+  box-shadow: 0 0 0 1px #ffdf9d inset;
+}
+.thumb:before {
+  content: "";
+  border: 6px solid;
+  border-color: #404546 transparent transparent;
+  float: left;
+}
+.contr:before {
+  content: "";
+  border: solid;
+  border-color: #abb0b1 transparent;
+  border-width: 0 6px 6px;
+  float: right;
+  margin: 7px 0 0;
+}
+.contr ~ .contr {
+  margin: 16px 0 0;
+}
+.contr.at ~ .contr {
+  margin: 10px 0 0;
+}
+.at.contr:before {
+  border-width: 6px 6px 0;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.menu-pr:before {
+  -webkit-filter: brightness(100);
+  filter: brightness(100);
+}
+.su .relat {
+  float: none;
+}
+.su .relat a {
+  margin: 0;
+}
+.su input,
+.su button {
+  float: left;
+  margin: 0 3px 0 0;
+}
+.su a:hover {
+  border-color: #ffdf9d;
+}
+.su .proc1 {
+  margin: 0;
+  width: 250px;
+  float: left;
+}
+.su .proc2 {
+  margin: 0 -10px 0 -34px;
+  padding-left: 22px;
+  height: 20px;
+  width: 4px;
+}
+.busca {
+  background: #f4f5f5;
+}
+.busca .proc1 {
+  border-color: rgba(51, 55, 57, 0.12);
+  padding: 10px;
+  width: 100%;
+}
+.busca .proc2 {
+  margin: 0 -40px;
+  padding: 9px 0 !important;
+  background-position: 9px -2032px;
+  right: initial;
+  top: initial;
+  width: 38px;
+}
+.busca .fe {
+  background-position: 9px -4191px;
+  margin-left: -80px;
+}
+.busca .fe2 {
+  background-position: 9px -4311px;
+  opacity: 0.6;
+}
+.busca .su .proc1 {
+  width: 266px;
+}
+.opcoes {
+  margin: 40px 0 0;
+  padding: 0;
+  width: 170px;
+}
+.opcoes .c-list {
+  padding: 10px;
+}
+.auto-comp {
+  right: auto;
+  margin-top: -1px;
+  width: 318px;
+}
+label ~ .auto-comp {
+  margin-left: 172px;
+}
+.lm label ~ .auto-comp {
+  margin-left: 112px;
+}
+.busca + .auto-comp {
+  width: auto;
+  left: 6px;
+  right: 6px;
+  margin-top: -7px;
+}
+.sel-caixa {
+  box-shadow: 1px 1px rgba(51, 55, 57, 0.07) inset,
+    -1px 0 rgba(51, 55, 57, 0.07) inset, 0 0 10px rgba(51, 55, 57, 0.07) inset;
+  width: 260px;
+  margin: 0 10px 10px;
+}
+.ab {
+  white-space: nowrap;
+}
+.ab a {
+  display: inline-block;
+  outline: 0;
+}
+.ab .at {
+  box-shadow: 0 -3px #abc1d7 inset;
+}
+.ar,
+.ar dl,
+.ab a {
+  padding: 12px;
+}
+#c,
+#c1,
+.ar.ma {
+  padding: 24px;
+}
+.ar dl {
+  width: 170px;
+}
+.ar a,
+.ar dt {
+  box-shadow: 0 -1px rgba(40, 104, 159, 0.17) inset;
+  padding: 10px 12px;
+}
+.ar a {
+  box-shadow: 0 -1px #f4f5f5 inset;
+}
+[class^="logo-"]:before,
+.mod a:before {
+  border-radius: 5px;
+  float: left;
+  height: 40px;
+  width: 40px;
+  content: "";
+}
+[class^="logo-"]:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
+  margin: -8px 10px -8px 0;
+  vertical-align: text-bottom;
+}
+h1.carr:before,
+.op.carr:before,
+.transp h2.carr:before {
+  border-color: #fff rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
+}
+.op.carr:before {
+  margin: 11px 0 0 -31px;
+  left: 0;
+}
+h2.carr {
+  max-width: 180px;
+  margin: 10% auto;
+}
+h2.carr:empty {
+  max-width: 26px;
+}
+h2.carr:before {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  margin: 0;
+  float: left;
+}
+h2.carr.c {
+  left: calc(50% - 13px);
+}
+@keyframes c {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes c {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.mod:hover .at a,
+.show .at a,
+.mod li a {
+  width: 30px;
+}
+.mod a:before {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 15px 0 -5px;
+}
+.mod a:hover:before {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.mod li.at a:before {
+  background-color: #fff;
+}
+.mod a:focus:before {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75) inset;
+}
+.op {
+  margin: 9px 23px 11px;
+  z-index: 9999;
+}
+.op a {
+  width: 20px;
+  text-overflow: inherit;
+}
+.op .n-msg {
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  top: 42px;
+  left: 0;
+  padding: 0;
+  width: 16px;
+  position: absolute;
+}
+.op a:before,
+.menu-pr:before {
+  background: url(/assets/i.svg) -100px -6200px no-repeat;
+  content: "";
+  margin: 0 20px 0 0;
+  height: 20px;
+  width: 20px;
+  opacity: 0.6;
+  float: left;
+}
+.op a.at:before,
+.menu-pr.at:before {
+  opacity: 1;
+}
+#u1:before {
+  background-position: 0 -6200px;
+}
+.central {
+  max-width: 1100px;
+  margin: auto;
+}
+.menu {
+  right: 0;
+  left: -1px;
+  top: -60px;
+  background-color: #235b8b;
+  border-left: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09) inset;
+}
+.menu .proc1 {
+  background: none;
+  border-color: transparent;
+  color: #fff;
+  outline: 0;
+  width: calc(100% - 72px);
+}
+.menu-pr:before {
+  background-position: 0 -2040px;
+  margin: 10px;
+}
+.menu input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.menu input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.menu input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.menu input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.menu .proc2 {
+  border-radius: 5px;
+  border-color: transparent !important;
+  padding: 10px;
+}
+.menu .proc2:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.marcadagua {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.marcadagua text {
+  opacity: 0.065;
+  stroke: #fff;
+  stroke-width: 4;
+  paint-order: stroke fill;
+}
+.f-g,
+.f-g > div {
+  padding: 5px;
+}
+.f-g input,
+.f-g select,
+.f-g textarea {
+  padding: 10px;
+}
+.f-g .tam-data {
+  width: 100px;
+}
+.f-g input,
+.f-g select,
+.f-g textarea,
+.f-v input,
+.f-v select,
+.f-v textarea {
+  width: 100%;
+}
+.f-g label,
+.f-v label {
+  width: auto;
+  padding: 0 0 5px;
+  display: block;
+}
+.f-g label:empty,
+.f-v label:empty {
+  display: none;
+}
+.f-v {
+  padding-top: 3px;
+}
+.f-v label {
+  display: block;
+  padding: 5px 0;
+}
+.flex-linha {
+  display: flex;
+  margin: 0 -12px;
+}
+.flex-linha.item,
+.card .flex-linha {
+  margin: 0;
+  padding: 5px;
+}
+.flex-coluna {
+  flex: 1;
+  margin: 0 12px 24px;
+}
+.item .flex-coluna,
+.card .flex-coluna {
+  margin: 5px;
+}
+.flex-coluna.tam-min {
+  flex: 0 0;
+}
+.flex-col-2 {
+  flex-wrap: wrap;
+}
+.flex-col-2 .flex-coluna {
+  flex-basis: calc(50% - 24px);
+}
+.card {
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.07) inset,
+    0 0 10px rgba(51, 55, 57, 0.07) inset;
+  border-radius: 3px;
+}
+.card .flex-linha + .flex-linha {
+  margin-top: -10px;
+}
+.pb {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.barra {
+  padding: 13px 24px;
+  margin: -24px -24px 24px;
+}
+.barra h2 {
+  margin: 0;
+}
+.barra .hi {
+  width: auto !important;
+}
+.barra .elip {
+  margin: 0;
+  max-width: 100%;
+  vertical-align: top;
+}
+.barra .flex-coluna {
+  margin: -1px 12px;
+  white-space: nowrap;
+}
+.barra .flex-coluna dd {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.de-para:after {
+  content: " \2192";
+}
+calendario {
+  height: 34px;
+}
+.mydp {
+  border-color: rgba(51, 55, 57, 0.12) rgba(51, 55, 57, 0.12)
+    rgba(51, 55, 57, 0.24) !important;
+  height: 32px;
+}
+.mydp .selector {
+  border-color: #cacdce #abb0b1 #abb0b1 #cacdce !important;
+}
+.mydp .selection {
+  height: 32px !important;
+  line-height: 32px !important;
+}
+.mydp button,
+.mydp .btnpicker {
+  box-shadow: none;
+}
+.mydp button,
+.mydp .daycell,
+.mydp .monthcell,
+.mydp .yearcell {
+  color: #333739;
+}
+.mydp .icon-mydpcalendar,
+.mydp .icon-mydpremove {
+  background: url(https://intranet.policiamilitar.mg.gov.br/static/assets/i.svg)
+    6px -1554px no-repeat;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  border-radius: 0;
+}
+.mydp .icon-mydpremove {
+  background-position: 3px -4194px;
+  width: 26px;
+}
+.mydp .btnpickerenabled:hover,
+.mydp .btnclearenabled:hover,
+.mydp .currmonth {
+  background: #f4f5f5;
+}
+.mydp .selectorarrow {
+  margin-top: 5px;
+}
+.mydp .caltable,
+.mydp .headerlabelbtn,
+.mydp .headertodaybtn,
+.mydp .monthcell,
+.mydp .yearcell {
+  font-size: 13px;
+}
+.mydp .weekdaytitle {
+  background: #fff;
+  color: #558bb9;
+  line-height: 22px;
+  box-shadow: 0 -1px rgba(40, 104, 159, 0.2) inset,
+    0 1px rgba(40, 104, 159, 0.2) inset;
+}
+.mydp .header {
+  background-color: #fff;
+  height: 34px;
+}
+.mydp .header td:nth-child(1),
+.mydp .header td:nth-child(3) {
+  padding: 0 2px;
+}
+.mydp .icon-mydpright,
+.mydp .icon-mydpup,
+.mydp .icon-mydpleft,
+.mydp .icon-mydpdown {
+  color: #abb0b1;
+}
+.mydp .headertodaybtn,
+.mydp .monthlabel,
+.mydp .yearlabel {
+  border: 0 !important;
+  height: 30px;
+  line-height: 30px;
+}
+.mydp .headertodaybtn:hover,
+.mydp .monthlabel:hover,
+.mydp .yearlabel:hover {
+  background: #fbfbfc;
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.07) inset;
+  color: #000;
+}
+.mydp .selectedday,
+.mydp .selectedmonth,
+.mydp .selectedyear {
+  background-color: #d8e4ee !important;
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.07) inset;
+}
+.mydp .selectedday .datevalue,
+.mydp .selectedmonth .monthvalue,
+.mydp .selectedyear .yearvalue {
+  border: 0;
+  background: none !important;
+}
+.mydp .monthlabel,
+.mydp .yearlabel {
+  width: 100% !important;
+}
+.mydp .headerbtn,
+.mydp .headerbtncell,
+.mydp .headerlabelbtn {
+  background: none;
+}
+.mydp .headerbtn {
+  padding: 0 8px;
+  height: 30px;
+}
+.mydp .headerbtn:hover {
+  background: #fbfbfc;
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.07) inset;
+}
+.mydp .monthcell:hover,
+.mydp .yearcell:hover,
+.mydp .currmonth.daycell:hover {
+  background: #fcffc8;
+  box-shadow: 0 0 0 1px rgba(51, 55, 57, 0.07) inset;
+}
+.mydp .icon-mydptoday:before {
+  content: none;
+}
+.mydp .highlight {
+  color: #e82017;
+}
+.mydp .selectorarrow:before {
+  border-bottom-color: #cacdce;
+}
+@media screen and (min-width: 461px) {
+  .sel-caixa {
+    border: 0;
+    position: relative;
+    display: block;
+  }
+}
+@media screen and (max-width: 1554px) {
+  .central #c1:not(.no) ~ #c2,
+  .central #c1:not(.no) ~ * #c2 {
+    margin: 0 -99px 0 99px;
+  }
+  .central #c1:not(.no) ~ #c3,
+  .central #c1:not(.no) ~ * #c3 {
+    margin: 0 -99px 0 0;
+  }
+  .central #c1:not(.no) ~ #c3 + #c2,
+  .central #c1:not(.no) ~ * #c3 + #c2 {
+    margin-right: 175px;
+  }
+}
+@media screen and (max-width: 1362px) {
+  .central #c1:not(.no) ~ #c2,
+  .central #c1:not(.no) ~ * #c2 {
+    margin: 0 0 0 198px;
+  }
+  .central #c1:not(.no) ~ #c3,
+  .central #c1:not(.no) ~ * #c3 {
+    margin: 0 0 24px;
+  }
+  .central #c1:not(.no) ~ #c3 + #c2,
+  .central #c1:not(.no) ~ * #c3 + #c2 {
+    margin-right: 274px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .flex-linha {
+    margin: 0;
+    display: block;
+  }
+  .flex-coluna {
+    margin: 0 0 24px;
+  }
+  .flex-coluna:empty {
+    display: none;
+  }
+}
+@media screen and (min-width: 799px) {
+  .menu .proc1 {
+    width: calc(100% - 182px);
+  }
+}
+@media screen and (max-width: 799px) {
+  #m ul {
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    padding: 9px;
+    margin: 0;
+    float: none;
+  }
+  #m .mod:not(.show) {
+    padding-right: 90px;
+  }
+  #m .mod:hover {
+    border: 0;
+  }
+  .op {
+    margin-bottom: 0;
+  }
+  #g #c #c1 ~ #c2,
+  #g #c #c1 ~ * #c2 {
+    margin-left: 0 !important;
+  }
+  #g #c #c1 ~ #c2:before,
+  #g #c #c1 ~ * #c2:before {
+    content: none;
+  }
+  #m2 {
+    width: auto;
+    border: 0;
+  }
+  #m2.mc1 {
+    left: 150px;
+  }
+  .menu {
+    position: initial;
+    padding-left: 24px;
+  }
+  .menu .proc1 {
+    width: calc(100% - 56px);
+  }
+  #c1,
+  #m2.jm ~ * #c2,
+  #m2.jm ~ * #c3,
+  #m2.jm ~ * #c4,
+  #m2.jm ~ * .flu,
+  .no-mobile {
+    display: none;
+  }
+  .mc1 ~ * #c1,
+  #c1.at {
+    background: #f4f5f5;
+    box-shadow: -5px 0 20px -10px rgba(51, 55, 57, 0.24) inset;
+    display: block;
+  }
+  #c1,
+  #m2 {
+    bottom: 0;
+    left: 0;
+    top: 60px;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 6;
+  }
+  #c1 dl {
+    margin: 0;
+  }
+  #c1 dd a:not(.ic),
+  #c1 dt {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .mod:not(.show):before {
+    float: right;
+    content: "";
+    border: 6px solid;
+    border-color: rgba(255, 255, 255, 0.6) transparent transparent;
+    margin: 22px -52px 0 0;
+  }
+  .ar dl {
+    width: calc(50% - 24px);
+  }
+  .jm-central {
+    top: 60px;
+    left: 8px;
+    right: 8px;
+    width: auto;
+    bottom: 8px;
+  }
+  .jm-central h1 {
+    width: auto;
+    left: 25px;
+    right: 25px;
+  }
+  .jm-central .rol {
+    max-height: calc(100vh - 142px);
+  }
+  div.na {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  fieldset label ~ input,
+  fieldset label ~ select {
+    width: calc(100% - 172px);
+  }
+}
+@media screen and (max-width: 460px) {
+  #m .mod {
+    padding: 3px;
+  }
+  #m .mod:not(.show) {
+    padding-right: 56px;
+  }
+  #m .mod a {
+    margin: 3px;
+  }
+  #m .mod a:before {
+    margin-right: 10px;
+  }
+  #m h1 {
+    background: none;
+    padding: 14px 16px;
+  }
+  #m ul {
+    padding: 5px;
+  }
+  #m:before {
+    content: none;
+  }
+  .menu {
+    padding: 6px 0;
+  }
+  .menu .proc1 {
+    width: calc(100% - 48px);
+  }
+  #c {
+    padding: 16px;
+  }
+  #c1,
+  #m2 {
+    top: 52px;
+  }
+  #c3 {
+    float: none;
+    margin: 0 0 16px;
+  }
+  #c3:not(.no) + #c2 {
+    margin-right: 0 !important;
+  }
+  fieldset:not(.f-g):not(.f-v) label:first-child {
+    float: none;
+    text-align: left;
+    width: auto;
+  }
+  label {
+    display: block;
+    padding: 5px 0;
+  }
+  #c3,
+  .t2 th {
+    width: auto;
+  }
+  [class^="logo-"]:before {
+    margin-left: -10px;
+  }
+  .op {
+    margin: 5px 5px 0;
+  }
+  .c-user {
+    right: 0;
+  }
+  .c-user .separ {
+    position: absolute;
+    background: 0;
+    border: 0;
+    right: 49px;
+    top: 3px;
+    width: auto;
+    padding: 0;
+    margin: 3px;
+  }
+  .ar,
+  .ar dl {
+    padding: 0;
+  }
+  .ar dl {
+    width: 100%;
+  }
+  .ar dt,
+  .ar a {
+    margin: 0;
+  }
+  .ar .direita {
+    float: none;
+    display: block;
+  }
+  #u1,
+  .c-user > .rol:not(.show),
+  .c-user,
+  .ic-escond,
+  .comp-caixa .c-foto {
+    display: none;
+  }
+  #m2.jm + .c-user {
+    background: #28689f;
+    box-shadow: none;
+    border: 0;
+    display: block;
+    width: auto;
+    left: 0;
+    top: 0;
+    right: 46px;
+  }
+  #m1.at:before {
+    background-position: -1px -4320px;
+  }
+  .separ {
+    box-shadow: none;
+  }
+  .separ a {
+    border: 4px solid transparent !important;
+    color: transparent;
+    width: 20px;
+    margin: 0 0 0 6px;
+    padding: 6px;
+    white-space: nowrap;
+  }
+  .separ a:empty {
+    padding: 6px;
+  }
+  .separ a:not(.txt) {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+  }
+  .comp-caixa {
+    padding: 0;
+  }
+  .comp-caixa .elip {
+    background: url(/assets/i.svg) 10px -6190px no-repeat;
+    color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 6px;
+    float: right;
+    max-width: 20px;
+  }
+  .comp-caixa .elip:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .comp-caixa .elip:before {
+    content: none;
+  }
+  .meuperfil:before {
+    background-color: #28689f;
+    box-shadow: 0 0 0 4px #fff, 0 1px 0 4px #fff;
+  }
+  .sel-caixa {
+    margin: 52px 0 0;
+    left: auto;
+    right: 6px;
+  }
+  .ob label:first-child:after {
+    right: auto;
+    margin: 0 0 0 3px;
+  }
+  .mod:not(.show):before {
+    margin: 20px -36px 0 0;
+  }
+  fieldset label ~ input,
+  fieldset label ~ select,
+  fieldset label ~ textarea,
+  fieldset label ~ .tam-max,
+  fieldset label:first-child ~ textarea,
+  fieldset label:first-child ~ .tam-max,
+  .lm label ~ input,
+  .lm label ~ select,
+  .lm label ~ textarea,
+  .lm label ~ .tam-max,
+  .lm label:first-child ~ textarea,
+  .lm label:first-child ~ .tam-max {
+    width: 100%;
+  }
+  .lm label ~ .auto-comp,
+  label ~ .auto-comp {
+    margin-left: 0;
+  }
+  .flex-coluna {
+    margin: 0 0 16px;
+  }
+  .f-g .f3,
+  .f-g .f4 {
+    width: calc(50% - 4px);
+  }
+  .t2 dt,
+  .t2 dd {
+    flex-basis: calc(100% - 12px);
+    padding: 0 6px 6px;
+  }
+  .t2 dt {
+    background: #fff;
+    text-align: left;
+    padding: 6px 6px 0;
+  }
+  .jm.direita {
+    right: 16px;
+  }
+  .barra {
+    padding: 9px 16px;
+    margin: -16px -16px 16px;
+  }
+}
+@media print {
+  .so-im {
+    display: block;
+  }
+  #c1,
+  #m ul,
+  .op,
+  #n,
+  .prop-pa,
+  .su,
+  h4,
+  #c5,
+  h2 a,
+  .no-im,
+  #u2 {
+    display: none;
+  }
+  #c1:not(.no) ~ #c2,
+  #c1:not(.no) ~ * #c2 {
+    margin-left: 0;
+  }
+  #c1:not(.no) ~ #c2:before,
+  #c1:not(.no) ~ * #c2:before {
+    content: none;
+  }
+  #c {
+    padding: 10px 0 0;
+  }
+  #m h1,
+  h1 {
+    padding: 0 0 10px;
+  }
+  #m,
+  #m h1,
+  h1,
+  h2 {
+    background: none;
+    color: #000;
+  }
+  #m {
+    border-bottom: 1px solid;
+    margin: 0 0 10px;
+    box-shadow: none;
+  }
+  #m:before {
+    content: "PMMG - ";
+    font: 700 18px/24px arial, sans-serif;
+    float: left;
+    margin: 0 6px 0 0;
+  }
+  .marcadagua text {
+    opacity: 0.32;
+  }
+  h3 {
+    box-shadow: 0 -1px #000 inset;
+  }
+  h3 .at {
+    border-color: #000 #000 #fff;
+  }
+}
+
