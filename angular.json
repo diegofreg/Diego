@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pm": {
+    "termo-coleta": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pm",
+            "outputPath": "dist/termo-coleta",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -66,12 +67,16 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+                          "browserTarget": "project-name:build",
+                          "proxyConfig": "proxy.conf.json"
+                    },
           "configurations": {
             "production": {
-              "browserTarget": "pm:build:production"
+              "browserTarget": "termo-coleta:build:production"
             },
             "development": {
-              "browserTarget": "pm:build:development"
+              "browserTarget": "termo-coleta:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pm:build"
+            "browserTarget": "termo-coleta:build"
           }
         },
         "test": {
@@ -94,6 +99,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -102,5 +108,5 @@
       }
     }
   },
-  "defaultProject": "pm"
+  "defaultProject": "termo-coleta"
 }

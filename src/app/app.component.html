@@ -1,30 +1,92 @@
-<h2 class="carr"></h2>
-<div id="g">
-  <div id="m">
-      <h1 class="logo-brasao">PMMG</h1>
-  </div>
-  <div id="c">
-      <div id="msgErro" class="no">
-          <span class="ic erro"></span>
-          <div class="msg">
-              Usuário ou senha com problemas.
-          </div>
-      </div>
-      <fieldset>
-          <div><span class="ic usr"></span><input type="text" placeholder="Usuário" title="Digite o número de polícia, ou de colaborador, com 7 dígitos e sem hífen."></div>
-          <div><span class="ic senha"></span><input type="password" placeholder="Senha"></div>
-          <div id="imgCaptcha" class="no"><img src="./login_files/digite.jpg" class="captcha" alt="digite os caracteres" width="180" height="60"><input type="text" placeholder="Digite o código"></div>
-      </fieldset>
-      <span class="ic pro"></span>
-      <div class="su">
-          <!--input type="button" name="button" value="Entrar" onclick="document.getElementById('imgCaptcha').classList.toggle('no');document.getElementById('msgErro').classList.toggle('no')" /-->
-          <input type="button" name="button" value="Entrar">
-      </div>
-      <a href="login.html#" class="item ci d tc">Alterar senha</a>
-  </div>
-  <ul id="identidade" class="identidade menor">
-      <li class="at"><h5>Visão</h5> sermos reconhecidos como referência na produção de segurança pública, contribuindo para a construção de um ambiente seguro em Minas Gerais.</li>
-      <li><h5>Missão</h5> promover segurança pública por intermédio da polícia ostensiva, com respeito aos direitos humanos e participação social em Minas Gerais.</li>
-      <li><h5>Valores</h5> representatividade, respeito, lealdade, disciplina, ética, justiça e hierarquia.</li>
-  </ul>
-</div>
+<section [ngClass]="{'dark-theme': isDarkTheme | async}" >
+    <div class="header">
+        <header>
+            <div>
+                <img class="card-img-top" src="/assets/mini.jpg">
+                <mat-slide-toggle [checked]="isDarkTheme | async">Tema Escuro</mat-slide-toggle>
+            </div>
+            <div>
+                <h1>Termo de Coleta</h1>
+                <input type="text" disabled value="{{ dataAtual | date:'dd/MM/yyyy'}}" class="input_header"/>
+            </div>
+            <div>
+                <h2>DIEGO APARECIDO MUNIZ DOS SANTOS</h2>
+                <mat-form-field appearance="outline" value = 'option' style="min-width: 30%;">
+                 <mat-label>Local</mat-label> 
+                 <mat-select>
+                    <mat-option value="ESCRITÓRIO	SECCIONAL BELO HORIZONTE">
+                        ESCRITÓRIO SECCIONAL BELO HORIZONTE
+                    </mat-option>
+                    <mat-option value='COORDENADORIA REGIONAL PATOS DE MINAS'>
+                        COORDENADORIA REGIONAL PATOS DE MINAS
+                      </mat-option>
+                  </mat-select>
+                </mat-form-field>
+            </div>
+        </header>
+    </div>
+    <div>
+        <main class="main">
+            <mat-drawer-container class="example-container">
+                <!--<mat-drawer #drawer opened="true" class="example-sidenav" mode="side">
+                    <main class="wrapper_content_sidenav">
+                        <div style="width: 50%; height: 100px;display: flex;flex-direction:column;justify-content: space-between;">
+                            <button mat-stroked-button (click)="clickedTab = 'Pesquisar'">Pesquisar</button>
+                            <button mat-stroked-button (click)="clickedTab = 'Coordenadoria'">Coordernadoria</button>
+                        </div>
+                    </main>
+                </mat-drawer>-->
+                <aside  class="example-sidenav-content" *ngIf="clickedTab == 'Coordenadoria',else search">
+                    <app-coordenadoria></app-coordenadoria>
+                </aside>
+                <ng-template #search>
+                    <aside  class="example-sidenav-content-pesquisar">
+                        <div style="width: 50%; display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                            <mat-form-field appearance="fill" style="width: 100%;">
+                                <mat-label>Pesquise</mat-label>
+                                <input matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>search</mat-icon>
+                            </mat-form-field>
+                            <button mat-flat-button color="primary" (click)="clickedTab = 'Coordenadoria'">Pesquisar</button>
+                        </div>
+                    </aside>
+                </ng-template>
+     
+            </mat-drawer-container>
+        </main>
+    </div>
+</section>
+
+
+
+
+
+
+    
+    
+   
+
+    
+  
+    
+
+
+       
+        
+        
+    
+
+
+    
+
+    
+
+
+        
+
+
+          
+           
+                  
+           
+           
