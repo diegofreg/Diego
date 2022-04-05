@@ -1,0 +1,104 @@
+.card_charge_header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.card_charge_header h1{
+	margin: 0px;
+}
+
+.pill-wrapper{
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	border: 1px solid #d3d3d3;
+}
+
+.left_half_pill{
+	display: flex;
+	align-items: center;
+	border-radius: 20px 0px 0px 20px;
+	border: 1px solid #d3d3d3;
+	padding: 10px;
+}
+
+.green_pill{
+	width: 50px;
+	margin: 0px 10px 0px 10px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: #24ad60;
+}
+
+.right_half_pill{
+	display: flex;
+	align-items: center;
+	border-radius: 0px 20px 20px 0px;
+	border: 1px solid #d3d3d3;
+	padding: 10px;
+}
+
+.yellow_pill{
+	width: 50px;
+	margin: 0px 10px 0px 10px;
+	height: 20px;
+	border-radius: 20px;
+	background-color:#e26f00;
+}
+
+.container_cards{
+	display: flex;
+	align-items: center;
+	min-height: 200px;
+	flex-wrap: wrap;
+}
+
+.container_cards div {
+	border: 1px solid #D3D3D3;
+	border-radius: 12px;
+}
+
+.container_cards > div {
+	flex: 1 1 150px;
+	margin:10px;
+}
+
+.wrapper_first_chart{
+	width: 40%;
+	height: auto;
+}
+.wrapper_second_chart{
+	width: 40%;
+	height: auto;
+}
+.wrapper_amount{
+	width: 20%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper_amount div{
+	border: 0px solid;
+	border-radius: 0px;
+}
+
+.amount {
+	font-weight: 500;
+	font-size: 25px;
+	margin: 4px 0px 4px 0px;
+}
+.title_amount {
+	font-size:14px;
+	font-weight: 500;
+	color: #d1cfcc;
+}
+.wrapper_amount span {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+

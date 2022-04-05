@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "termo-coleta": {
+    "butil-pro": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/termo-coleta",
+            "outputPath": "dist/butil-pro",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,10 +27,12 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "src/styles.scss"
+              "src/custom-theme.scss",
+              "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+							"node_modules/apexcharts/dist/apexcharts.min.js"
+						]
           },
           "configurations": {
             "production": {
@@ -67,16 +69,12 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-                          "browserTarget": "project-name:build",
-                          "proxyConfig": "proxy.conf.json"
-                    },
           "configurations": {
             "production": {
-              "browserTarget": "termo-coleta:build:production"
+              "browserTarget": "butil-pro:build:production"
             },
             "development": {
-              "browserTarget": "termo-coleta:build:development"
+              "browserTarget": "butil-pro:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "termo-coleta:build"
+            "browserTarget": "butil-pro:build"
           }
         },
         "test": {
@@ -99,7 +97,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -108,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "termo-coleta"
+  "defaultProject": "butil-pro"
 }

@@ -1,0 +1,98 @@
+.container{
+	display: flex;
+	min-height: 200px;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.container > div:first-child{
+	height: auto;
+	width: 50%;
+}
+.container > div:last-child{
+	width: 40%;
+	height: auto;
+}
+
+.wrapper_exchanges{
+	border: 1px solid #D3D3D3;
+	min-height: 20%;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.exchanges{
+	display: flex;
+	align-items: center;
+	max-width: 100%;
+	justify-content: space-around;
+	padding: 10px 20px 10px 20px;
+}
+
+.exchanges div {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+.exchanges span {
+	width: 50%;
+	word-wrap: break-word;
+}
+.exchanges mat-icon {
+	font-size: 30px;
+	margin-right: 20px;
+}
+
+.name_exchange{
+	font-size: 17px;
+	font-weight: bold;
+}
+.definition_exchange{
+	font-size: 15px;
+	color: #d3d3d3;
+}
+
+h2 {
+ font-weight:500;
+ color: white;
+ max-width: 35%;
+ text-align: center;
+}
+
+
+.green_card {
+	background-color: #24ad60;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+
+.green_card div {
+	display: flex;
+	align-items: center;
+}
+
+
+.wrapper_number {
+	display: flex;
+	align-items: center;
+	margin-top: 7px;
+}
+
+.green_card span {
+	color: white;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}

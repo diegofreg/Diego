@@ -1,142 +1,122 @@
-
-.toolbar{
-  color: d55Color;
-  
-  display: flex;
-  justify-content: center;
+.toolbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+		justify-content: center;
+    background: rgb(0,65,96);
+		background: linear-gradient(90deg, rgba(0,65,96,1) 0%, rgba(6,45,71,1) 17%, rgba(6,42,68,1) 38%, rgba(0,0,0,1) 71%); 
+		color: white;
+    font-weight: 600;
+		width:100vw;
 }
-
-section{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.wrapper_user{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 50%;
 }
-
-section div{
-  width: 95%;
+.user_claim{
+	font-size: 14px;
+	margin-right: 20px;
 }
-
-header div {
-  display: flex;
-  align-items: center ;
-  justify-content: space-between;
-  width: 100%;
-  margin: 20px 0px 20px 0px;
+.info_user{
+	display: flex;
+	align-items: center;
 }
-
-main mat-drawer-container{
-  width: 100%;
+.header_icon{
+	margin-right: 10px;
+	font-size: 25px;
 }
-
-.input_header {
-  text-align: end;
+.avatar_circle{
+	display: flex;
+	align-items: center;
+	font-size: 45px;
+	margin-right: 35px;
 }
-
-.example-container .mat-form-field + .mat-form-field {
-    margin-left: 8px;
-  }
-  :root {
-    --primary: #369c38;
-    --secondary: #132A13;
-    --padding: 15px;
-    --cinza : #405040;
-    --cinza-claro: #dedede;
-  }
-
-  .candy-app-theme {
-    
-  --primary: rgb(255, 136, 0);
-  --accent: #dedede;
-  --warn: bisque;
-  
-  }
-
-.toolbar-flex{
-  display: flex;
-  justify-content: space-between;
-  }
-.read {
-  border: none;
-  width: 20px !important;
-  margin-left: 5px;
+.user_email{
+	font-size: 12px ;
 }
-.right{
-  width: 77.5% !important;
+.company_name{
+	font-size:30px;
+	font-weight: 300;
 }
+.main_wrapper{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	width: 90vw;
+}
+.warning{
+	display: flex;
+	align-items: center;
+	height: 40px;
+	background-color: #feefef;
+	color:#ed4242;
+	width: 100vw;
+	justify-content: center;
+}
+.container_warning_content{
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 
-
-div.input {
-  width: 170px;
-  height: 20px;
-  border: 0.3px solid rgb(178, 197, 240);
-  justify-content: right;
 }
-
- 
-.example-sidenav {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  align-items: center ;
-  justify-content: center;
-  flex-direction: column;
- 
+.warning_icon{
+	display: flex;
+	align-items: center;
+	font-size:18px;
 }
-
-.example-sidenav-content {
-  width: 100%;
-  min-height: 100%;
+.uppercase{
+	color: #ff0000;
+	font-weight: bold;
+	margin-right: 10px;
 }
-.example-container{
-  width: 100%;
-  height: 100%;
+.top {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
 }
-p{
-  font-size: 20px;
-  font-weight: 600;
+.separate_arrow{
+	margin: 0px 10px 0px 10px ;
 }
-.wrapper_content_sidenav{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 40px;
+.clicked_link {
+	font-weight: bold;
+}
+.latest_text {
+	text-decoration: underline;
+	font-weight: 600;
 }
 
-.example-sidenav-content-pesquisar{
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.buttons_wrapper{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 30px;
 }
+.agree_button{
+	background-color: #008542;
+	color: #ffffff;
+	border-radius: 10px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
+	height: 40px;
+	width: 230px;
 
-.main{
-	height: 70vh;
 }
-.header{
-	height: 30vh;
+.desagree_button{
+	background-color: #ea5655;
+	color: #ffffff;
+	border-radius: 10px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 230px;
 }
-
-@media(max-width:1600px){
-.header{
-	height: 35vh;
-}
-	.main{
-		height: 50vh;
-	}
-}
-
-@media(max-width:1440px){
-	.header{
-		height:40vh;
-	}
-		.main{
-			height: 60vh;
-		}
-
+.option_icon{
+	margin-right: 10px ;
+	font-size: 20px;
 }

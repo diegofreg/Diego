@@ -1,0 +1,29 @@
+<div class="wrapper_bars_content">
+	<span> texto 1 </span>
+	<div class="bars">
+		<span>texto 1 </span>
+		<div class="container_middle">
+			<div class="absolute_container" *ngIf="index == '0'">
+				<div class="dd">
+					<span class='mini_titles'>titulo</span>
+					<span class="mini_titles">titulo</span>
+				</div>
+			</div>
+			<div class="container_bar">
+				<div class="minutes_counter"></div>
+				<div class="minutes_limit_bar">
+					<div class="wrapper_values_yellow" [style.min-width]="'40%'">
+						<span class="yellow_state_counter">40</span>
+						<div class="yellow_state" [style.min-width]="'40%'"></div>
+					</div>
+					<div class="wrapper_values_green" [style.min-width]="'20%'">
+						<span class="optimized_state_counter">20</span>
+						<div class="optimized_state"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class='second_text'>texto 2 </span>
+		<mat-icon class="edit_pen">edit</mat-icon>
+	</div>
+</div>

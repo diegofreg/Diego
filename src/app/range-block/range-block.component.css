@@ -1,0 +1,128 @@
+.wrapper_flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+}
+
+.wrapper_flex span{
+	max-width: 20%;
+	word-wrap: break-word;
+}
+.container_values{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+.container_values div {
+	display: flex;
+	align-items: center ;
+}
+
+.container_values span {
+	width: 20%;
+	word-wrap: break-word;
+	font-size: 13px;
+}
+
+.container_values p{
+	font-size: 13px;
+}
+
+.container_values > div{
+	flex: 1 1 100px;
+	margin: 0px  10px 0px 10px;
+	max-width: 40%;
+}
+
+.green_text{
+	color: #24ad60;
+}
+.container_middle_reduction{
+	margin: 0px 12px 0px 12px ;
+	position: relative;
+	width: 130px;
+}
+
+hr{
+	margin: 13px 0px 13px 0px;
+}
+
+h1{
+	font-weight: bold;
+	font-size: 24px;
+	color:#242322;
+	margin: 0px 0px 20px 5px;
+}
+
+.measurement_card{
+	background-color: #24ad60;
+	height: 90px;
+	max-width: 130px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+}
+.accountants p{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.wrapper_measurement_cards{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper_measurement_cards > div {
+	flex : 1 1 300px;
+	margin: 5px 5px 5px 5px;
+}
+
+
+@media(max-width:1600px){
+	.measurement_card{
+		background-color: #24ad60;
+		height: 90px;
+		max-width: 250px;
+		border-radius: 8px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 10px;
+		color: white;
+		font-weight: bold;
+		font-size: 13px;
+	}
+}
+
+@media(max-width:1440px){
+	.container_values > div{
+		flex: 1 1 300px;
+		margin: 0px  10px 0px 10px;
+		max-width: 40%;
+	}
+
+	.measurement_card{
+		background-color: #24ad60;
+		height: 90px;
+		max-width: 200px;
+		border-radius: 8px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 10px;
+		color: white;
+		font-weight: bold;
+		font-size: 13px;
+	}
+}
+

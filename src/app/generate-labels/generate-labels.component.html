@@ -1,0 +1,20 @@
+<div class="container_footer" [style.height]="card == 'Redutores' || card == 'Pré-aquecedores' ? '50px':'100px' ">
+	<div class="container_orientation">
+		<div class="wrapper_orientation" *ngIf="card != 'Redutores' && card != 'Pré-aquecedores' && card != 'Grupos Alternativos'">
+			<div class="cicle_color_yellow"></div>
+			<span>Estado Atual</span>
+		</div>
+		<div class="wrapper_orientation" *ngIf="card != 'Pré-aquecedores' && card != 'Grupos Alternativos'">
+			<div class="cicle_color_green"></div>
+			<span>Otimizado</span>
+		</div>
+		<div class="wrapper_orientation" *ngIf="card != 'Redutores' && card != 'Pré-aquecedores' && card != 'Resultado Financeiro' && card != 'Grupos Alternativos'">
+			<div class="cicle_color_white"></div>
+			<span>texto 3</span>
+		</div>
+	</div>
+	<span class="show_more">
+		mostrar mais 
+		<mat-icon>navigate_next</mat-icon>
+	</span>
+</div>

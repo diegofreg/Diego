@@ -1,54 +1,42 @@
-import { NgModule} from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MaterialModule } from './share/material/material.module';
 
 import { AppComponent } from './app.component';
-import { CoordenadoriaComponent } from './coordenadoria/coordenadoria.component';
-import { DescricaodaacaoComponent } from './descricaodaacao/descricaodaacao.component';
-import { ProdutoagricolaComponent } from './produtoagricola/produtoagricola.component';
-import { EnvolvidosComponent } from './envolvidos/envolvidos.component';
-
-//import { ThemePalette } from '@angular/material/core';
-import { FiscalizadoComponent } from './fiscalizado/fiscalizado.component';
-import { HttpService } from './Services/http.service';
-import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
-import { ThemeService } from './core/services/theme.service';
-import { StoreModule } from '@ngrx/store';
-import { DialogErrorsComponent } from './modal/dialog-errors/dialog-errors.component';
-
+import { CardContentComponent } from './card-content/card-content.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon'; 
+import {MatButtonModule} from '@angular/material/button'; 
+import {MatGridListModule} from '@angular/material/grid-list';
+import { SelectCardContentComponent } from './select-card-content/select-card-content.component';
+import { BarsComponent } from './bars/bars.component';
+import { GenerateLabelsComponent } from './generate-labels/generate-labels.component';
+import { RangeBlockComponent } from './range-block/range-block.component';
+import { MainExchangesComponent } from './main-exchanges/main-exchanges.component';
+import { ChargeContentComponent } from './charge-content/charge-content.component'
+import {NgApexchartsModule} from 'ng-apexcharts';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoordenadoriaComponent,
-    DescricaodaacaoComponent,
-    ProdutoagricolaComponent,
-    EnvolvidosComponent,
-    FiscalizadoComponent,
-    ToolbarComponent,
-    DialogErrorsComponent
-
+    CardContentComponent,
+    MainContentComponent,
+    SelectCardContentComponent,
+    BarsComponent,
+    GenerateLabelsComponent,
+    RangeBlockComponent,
+    MainExchangesComponent,
+    ChargeContentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    CommonModule,
-    MaterialModule,
-    StoreModule.forRoot({}, {})   
+		MatIconModule,
+		MatButtonModule,
+		MatGridListModule,
+    NoopAnimationsModule,
+		NgApexchartsModule
   ],
-  providers: [HttpService,ThemeService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

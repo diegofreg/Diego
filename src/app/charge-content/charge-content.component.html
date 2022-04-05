@@ -1,0 +1,54 @@
+<section>
+	<div class="card_charge_header">
+		<h1>Comparativo de custo</h1>
+		<div class="pill-wrapper">
+			<div class="left_half_pill">
+				<div class="green_pill"></div>
+				<span> texto 1</span>
+			</div>
+			<div class="right_half_pill">
+				<div class="yellow_pill"></div>
+				<span> texto 2 </span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container_cards">
+		<div class="wrapper_first_chart">
+			<apx-chart 
+				[plotOptions]="apexChartLeft.plotOptions" 
+				[series]="apexChartLeft.series" 
+				[chart]="apexChartLeft.chart" 
+				[xaxis]="apexChartLeft.xaxis"
+			  [dataLabels]="apexChartLeft.dataLabels"
+				[stroke]="apexChartLeft.stroke"
+				[colors]="apexChartLeft.colors"
+			></apx-chart>
+		</div>
+		<div class="wrapper_second_chart">
+			<apx-chart
+			[series]="apexChartRight.series"
+			[chart]="apexChartRight.chart"
+			[xaxis]="apexChartRight.xaxis"
+			[stroke]="apexChartRight.stroke"
+			[colors]="apexChartRight.colors"
+			[dataLabels]="apexChartRight.dataLabels"
+			[legend]="apexChartRight.legend"
+			[markers]="apexChartRight.markers"
+			[grid]="apexChartRight.grid"
+			[yaxis]="apexChartRight.yaxis"
+			[title]="apexChartRight.title"
+		></apx-chart>
+		</div>
+		<div class="wrapper_amount">
+			<div>
+				<p class="title_amount">texto 1</p>
+				<p class="amount">U$1000</p>
+				<span class="title_amount">/hora</span>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+

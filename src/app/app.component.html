@@ -1,92 +1,55 @@
-<section [ngClass]="{'dark-theme': isDarkTheme | async}" >
-    <div class="header">
-        <header>
-            <div>
-                <img class="card-img-top" src="/assets/mini.jpg">
-                <mat-slide-toggle [checked]="isDarkTheme | async">Tema Escuro</mat-slide-toggle>
-            </div>
-            <div>
-                <h1>Termo de Coleta</h1>
-                <input type="text" disabled value="{{ dataAtual | date:'dd/MM/yyyy'}}" class="input_header"/>
-            </div>
-            <div>
-                <h2>DIEGO APARECIDO MUNIZ DOS SANTOS</h2>
-                <mat-form-field appearance="outline" value = 'option' style="min-width: 30%;">
-                 <mat-label>Local</mat-label> 
-                 <mat-select>
-                    <mat-option value="ESCRITÓRIO	SECCIONAL BELO HORIZONTE">
-                        ESCRITÓRIO SECCIONAL BELO HORIZONTE
-                    </mat-option>
-                    <mat-option value='COORDENADORIA REGIONAL PATOS DE MINAS'>
-                        COORDENADORIA REGIONAL PATOS DE MINAS
-                      </mat-option>
-                  </mat-select>
-                </mat-form-field>
-            </div>
-        </header>
-    </div>
-    <div>
-        <main class="main">
-            <mat-drawer-container class="example-container">
-                <!--<mat-drawer #drawer opened="true" class="example-sidenav" mode="side">
-                    <main class="wrapper_content_sidenav">
-                        <div style="width: 50%; height: 100px;display: flex;flex-direction:column;justify-content: space-between;">
-                            <button mat-stroked-button (click)="clickedTab = 'Pesquisar'">Pesquisar</button>
-                            <button mat-stroked-button (click)="clickedTab = 'Coordenadoria'">Coordernadoria</button>
-                        </div>
-                    </main>
-                </mat-drawer>-->
-                <aside  class="example-sidenav-content" *ngIf="clickedTab == 'Coordenadoria',else search">
-                    <app-coordenadoria></app-coordenadoria>
-                </aside>
-                <ng-template #search>
-                    <aside  class="example-sidenav-content-pesquisar">
-                        <div style="width: 50%; display: flex;align-items: center;justify-content: center;flex-direction: column;">
-                            <mat-form-field appearance="fill" style="width: 100%;">
-                                <mat-label>Pesquise</mat-label>
-                                <input matInput placeholder="Placeholder">
-                                <mat-icon matSuffix>search</mat-icon>
-                            </mat-form-field>
-                            <button mat-flat-button color="primary" (click)="clickedTab = 'Coordenadoria'">Pesquisar</button>
-                        </div>
-                    </aside>
-                </ng-template>
-     
-            </mat-drawer-container>
-        </main>
-    </div>
-</section>
+<div class="toolbar" role="banner">
+	<div style="width: 90%;display: flex;align-items: center;justify-content: space-between;">
+		<div>
+			<span class="company_name">Butil PRO</span>
+		</div>
+		<div class="wrapper_user">
+			<span class="user_claim">Operador REFAX</span>
+			<div class="info_user">
+				<mat-icon aria-hidden="false" class="header_icon">notifications</mat-icon>
+				<mat-icon aria-hidden="false" class="header_icon">outbox</mat-icon>
+				<mat-icon aria-hidden="false" class="avatar_circle">account_circle</mat-icon>
+				<span class="user_email">jose.silva@petrobras.com.br</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="warning">
+	<div class="container_warning_content">
+		<mat-icon aria-hidden="false" class="warning_icon">warning_amber</mat-icon>
+		<p class="uppercase">ATENÇÃO!</p>
+		<p>Otimização Pendente</p>
+	</div>
+</div>
+<div style="display:flex;justify-content: center;">
+	<section class="main_wrapper">
+		<div class="top">
+			<div class="direction">
+				<!-- condicao para negrito em cima da tag p necessita de url ... por enquanto negrito apenas no resumo geral-->
+	<span>Butil Pro<span class="separate_arrow" > > </span>
+		<span class="clicked_link">Resumo Geral</span> 
+	</span>
+			</div>	
+			<div class="otimization">
+				<span>Otimização : </span>
+				<span class="latest_text">21/01/2002-10:00hr</span> 
+			</div>
+		</div>
+		<div class="buttons_wrapper">
+			<button mat-raised-button class="agree_button">
+				<mat-icon aria-hidden="false" class="option_icon">done</mat-icon>
+				Aceitar Otimização
+			</button>
+			<button mat-raised-button class="desagree_button">
+				<mat-icon aria-hidden="false" class="option_icon">close</mat-icon>
+				Descartar Otimização
+			</button>
+		</div>
+		<app-main-content></app-main-content>
+	</section>
+</div>
+	
 
 
 
 
-
-
-    
-    
-   
-
-    
-  
-    
-
-
-       
-        
-        
-    
-
-
-    
-
-    
-
-
-        
-
-
-          
-           
-                  
-           
-           

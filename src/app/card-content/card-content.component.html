@@ -1,0 +1,38 @@
+<div [ngSwitch] = 'tabOn'>
+
+
+	<div *ngSwitchCase="'Geração de Vapor'">
+		<span class="mini_titles space">Geradores</span>
+		<div *ngFor="let content of firstCardContent, let i=index">
+			<app-bars index='{{i}}'></app-bars>
+		</div>
+	</div>
+
+	<div *ngSwitchCase="'Geração Elétrica'"> 
+		<span class="mini_titles space">Geradores</span>
+		<div *ngFor="let content of firstCardContent, let i=index">
+			<app-bars index='{{i}}'></app-bars>
+		</div>
+</div>
+
+	<div *ngSwitchCase="'Redutores'">
+			<app-range-block card="{{tabOn}}"></app-range-block>
+	</div>
+
+	<div *ngSwitchCase="'Pré-aquecedores'">
+			<app-range-block card="{{tabOn}}"></app-range-block>
+	</div>
+
+	<div *ngSwitchCase="'Grupos Alternativos'">
+			<app-main-exchanges></app-main-exchanges>
+	</div>
+
+	<div *ngSwitchCase="'Resultado Financeiro'">
+			<app-charge-content></app-charge-content>
+	</div>
+
+	<!---faca sua logica aqui para os cases -->
+	<div *ngSwitchCase="'Combustiveis'"> case para Combustiveis</div>
+	<div *ngSwitchCase="'Condensação/Extração'"> case para Condensação/Extração</div>
+	<div *ngSwitchCase="'Alívios'"> case para Alívios</div>
+</div>
