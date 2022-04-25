@@ -1,0 +1,11 @@
+<table class="table-style">
+    <tr class="table-line">
+      <th class="table-header">Faixa Idade</th>
+      <th class="table-header">Media IMC</th>
+    </tr>
+  
+    <tr class="table-line" *ngFor="let c of candidatos">
+      <td class="table-def">{{c.faixaIdade!.idadeInicial}} à {{c.faixaIdade!.idadeFinal}}</td>
+      <td class="table-def">{{c.mediaIMC}} </td>
+    </tr>
+  </table>

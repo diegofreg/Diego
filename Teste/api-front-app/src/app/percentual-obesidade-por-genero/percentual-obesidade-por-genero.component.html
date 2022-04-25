@@ -1,0 +1,12 @@
+<table class="table-style">
+  <tr class="table-line">
+    <th class="table-header">Sexo</th>
+    <th class="table-header">Percentual</th>
+  </tr>
+
+  <tr class="table-line" *ngFor="let c of candidatos">
+    <td class="table-def">{{c.sexo}}</td>
+    <td class="table-def">{{c.percentualObesidade}} % </td>
+  </tr>
+</table>
+
